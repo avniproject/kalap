@@ -1,0 +1,18 @@
+{
+  "organisation": "Kalap",
+  "catchments": [
+    {
+      "name": "Dehradun",
+      "uuid": "c618d178-79db-483e-8ebe-88b695a0eef4",
+      "type": "Village",
+      "addressLevels": [
+        {
+          "uuid": "d8f846c2-7a1d-4edc-b99a-0f74be8c167e",
+          "name": "Dehradun",
+          "level": 1,
+          "type": "Village"
+        }
+      ]
+    }
+  ]
+}
