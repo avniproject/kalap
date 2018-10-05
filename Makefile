@@ -39,7 +39,6 @@ create_org: ## Create JSS org and user+privileges
 
 # <refdata>
 deploy_concepts:
-	$(call _curl,POST,concepts,@concepts.json)
 	$(call _curl,POST,concepts,@registrationConcepts.json)
 
 deploy_catchments:
