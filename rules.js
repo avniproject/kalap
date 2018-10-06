@@ -51,13 +51,25 @@ class RegistrationHandlerKalap {
         return statusBuilder.build();
         })
     }
-
+    //
+    // abc(individual, formElementGroup) {
+    //     return formElementGroup.formElements.map(fe=>{
+    //         let statusBuilder = new FormElementStatusBuilder({individual, fe});
+    //     statusBuilder.show().when.valueInRegistration("Type of facility visited by family members in last 12 months").containsAnswerConceptName("Outpatient");
+    //     return statusBuilder.build();
+    //     })
+    // }
+    
     healthcareExperienceAtInpatientFacility(individual, formElementGroup) {
         return formElementGroup.formElements.map(fe=>{
             let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:fe});
         statusBuilder.show().when.valueInRegistration("Type of facility visited by family members in last 12 months").containsAnyAnswerConceptName("Inpatient", "Both");
+
+
+    facilityFromWhereChildRecievedImmunization(individual,formElement){
+        const  statusBuilder = this._getStatusBuilder(individual, formElement);
+        statusBuilder.show().when.valueInRegistration("Whether immunization received by child").is.yes;
         return statusBuilder.build();
-        })
     }
 
     doTheyVisitDoctorForARegularHealthCheckUp(individual, formElement) {
@@ -83,6 +95,8 @@ class RegistrationHandlerKalap {
     reasonForNotDoingRegularHealthCheckUpsByElderly([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether elderly family members visit doctor for regular health checkup").is.no;
     }
+
+
 
 
 
