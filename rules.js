@@ -16,8 +16,6 @@ const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'fo
 @RegistrationViewFilter("f24d531d-355c-403d-8325-7d2ea0661496", "Kalap Registration View Filter", 100.0, {})
 class RegistrationHandlerKalap {
     static exec(individual, formElementGroup) {
-        console.log("came to exec");
-        console.log(formElementGroup.name);
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new RegistrationHandlerKalap(), individual, formElementGroup);
     }
@@ -47,13 +45,18 @@ class RegistrationHandlerKalap {
         return statusBuilder.build();
     }
 
-    abc(individual, formElementGroup) {
-        console.log("came to FEG healthcareExperienceOutpatientFacility");
-        console.log(formElementGroup.formElements.length);
+    healthcareExperienceAtOutpatientFacility(individual, formElementGroup) {
         return formElementGroup.formElements.map(fe=>{
-            console.log(fe.name);
-            let statusBuilder = new FormElementStatusBuilder({individual, fe});
-        statusBuilder.show().when.valueInRegistration("Type of facility visited by family members in last 12 months").containsAnswerConceptName("Outpatient");
+            let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:fe});
+        statusBuilder.show().when.valueInRegistration("Type of facility visited by family members in last 12 months").containsAnyAnswerConceptName("Outpatient", "Both");
+        return statusBuilder.build();
+        })
+    }
+
+    healthcareExperienceAtInpatientFacility(individual, formElementGroup) {
+        return formElementGroup.formElements.map(fe=>{
+            let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:fe});
+        statusBuilder.show().when.valueInRegistration("Type of facility visited by family members in last 12 months").containsAnyAnswerConceptName("Inpatient", "Both");
         return statusBuilder.build();
         })
     }

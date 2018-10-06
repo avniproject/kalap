@@ -40,6 +40,7 @@
         {
           "name": "Occupation",
           "uuid": "b19b04e1-af87-48fa-8b32-ba04051ef9e5",
+          "type": "MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Occupation",
@@ -209,8 +210,8 @@
     },
     {
       "uuid": "3a0fafb9-93d6-4185-a95d-365332a7d8d3",
-      "name": "abc",
-      "display": "abc",
+      "name": "Healthcare experience at outpatient facility",
+      "display": "Healthcare Experience - Outpatient Facility",
       "displayOrder": 5,
       "formElements": [
         {
@@ -294,7 +295,7 @@
     },
     {
       "uuid": "2f13fbb7-e2c3-4ef1-a5ab-a0e104440359",
-      "name": "Healthcare Experience - Inpatient Facility",
+      "name": "Healthcare experience at inpatient facility",
       "display": "Healthcare Experience - Inpatient Facility",
       "displayOrder": 6,
       "formElements": [
