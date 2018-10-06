@@ -655,23 +655,23 @@
           "displayOrder": 8
         },
         {
-          "name": "Parity",
+          "name": "Gravida",
           "uuid": "305a6b70-83b9-42ea-9b6d-f9e44637233f",
           "keyValues": [],
           "concept": {
-            "name": "Parity",
-            "uuid": "2d679fd5-a75b-46bd-96c2-10c180187342"
+            "name": "Gravida",
+            "uuid": "dc2c23e9-19ad-471f-81d1-213069ccc975"
           },
           "displayOrder": 9,
           "mandatory": false
         },
         {
-          "name": "Gravida",
+          "name": "Parity",
           "uuid": "ccf75877-0a17-4e8e-8166-13778ab930c1",
           "keyValues": [],
           "concept": {
-            "name": "Gravida",
-            "uuid": "dc2c23e9-19ad-471f-81d1-213069ccc975"
+            "name": "Parity",
+            "uuid": "2d679fd5-a75b-46bd-96c2-10c180187342"
           },
           "displayOrder": 10
         },
@@ -750,7 +750,7 @@
           "displayOrder": 17
         },
         {
-          "name": "Heamoglobin test conducted during pregnancy?",
+          "name": "Haemoglobin test conducted during pregnancy?",
           "uuid": "a579e6b1-76be-4567-b5dc-80f1c35cc600",
           "type": "SingleSelect",
           "concept": {
