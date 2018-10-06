@@ -157,6 +157,10 @@
     "name": "Government hospital Delhi"
   },
   {
+    "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+    "name": "Government hospital Dehradun"
+  },
+  {
     "uuid": "d987260c-036e-4f9f-b3a3-53338a55d72e",
     "name": "Private hospital/Clinic Uttarkashi"
   },
@@ -220,6 +224,10 @@
       {
         "uuid": "5f696f1e-e087-48cd-901b-54a431982219",
         "name": "Government hospital Uttarkashi"
+      },
+      {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
       },
       {
         "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
@@ -555,6 +563,10 @@
       {
         "uuid": "5f696f1e-e087-48cd-901b-54a431982219",
         "name": "Government hospital Uttarkashi"
+      },
+      {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
       },
       {
         "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
@@ -901,6 +913,10 @@
         "name": "Government hospital Uttarkashi"
       },
       {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
+      },
+      {
         "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
         "name": "Government hospital Vikasnagar"
       },
@@ -1017,6 +1033,10 @@
         "name": "Government hospital Uttarkashi"
       },
       {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
+      },
+      {
         "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
         "name": "Government hospital Vikasnagar"
       },
@@ -1110,6 +1130,10 @@
       {
         "uuid": "5f696f1e-e087-48cd-901b-54a431982219",
         "name": "Government hospital Uttarkashi"
+      },
+      {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
       },
       {
         "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
@@ -1490,6 +1514,10 @@
         "name": "Government hospital Uttarkashi"
       },
       {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
+      },
+      {
         "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
         "name": "Government hospital Vikasnagar"
       },
@@ -1798,12 +1826,8 @@
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "e3ce9291-b998-4db9-96b1-cd1f40bbc487",
-        "name": "At home without attendee"
-      },
-      {
-        "uuid": "142e601d-9cd1-4eab-9657-c2156476814a",
-        "name": "At home with qualified attender"
+        "uuid": "93907b9d-8ee0-42cc-a7e2-4c521f591706",
+        "name": "ASHA/ANM"
       },
       {
         "uuid": "27ad1cc9-bf28-4533-ad57-df846e77183c",
@@ -1816,6 +1840,10 @@
       {
         "uuid": "5f696f1e-e087-48cd-901b-54a431982219",
         "name": "Government hospital Uttarkashi"
+      },
+      {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
       },
       {
         "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
@@ -1862,6 +1890,72 @@
     "uuid": "ded013e2-781d-4b9f-8410-b0174591dc53",
     "name": "Postterm"
   },
+  {
+    "uuid": "a0405799-1e3c-40ef-90ba-84c9c0931660",
+    "answers": [
+      {
+        "uuid": "e3ce9291-b998-4db9-96b1-cd1f40bbc487",
+        "name": "At home without attendee"
+      },
+      {
+        "uuid": "142e601d-9cd1-4eab-9657-c2156476814a",
+        "name": "At home with qualified attender"
+      },
+      {
+        "uuid": "27ad1cc9-bf28-4533-ad57-df846e77183c",
+        "name": "PHC Mori"
+      },
+      {
+        "uuid": "a29121ac-de4f-4201-93ed-f0f702a3f7fd",
+        "name": "CHC Purola"
+      },
+      {
+        "uuid": "5f696f1e-e087-48cd-901b-54a431982219",
+        "name": "Government hospital Uttarkashi"
+      },
+      {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
+      },
+      {
+        "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
+        "name": "Government hospital Vikasnagar"
+      },
+      {
+        "uuid": "80f8e981-7e38-497d-bc7d-c8386c453d28",
+        "name": "Government hospital Chandigarh"
+      },
+      {
+        "uuid": "0e038f4a-d65d-4ae1-9d45-4a3791aa7698",
+        "name": "Government hospital Delhi"
+      },
+      {
+        "uuid": "d987260c-036e-4f9f-b3a3-53338a55d72e",
+        "name": "Private hospital/Clinic Uttarkashi"
+      },
+      {
+        "uuid": "0619efe9-1284-4771-9fa5-b0c0b08cdd2a",
+        "name": "Private hospital/Clinic Dehradun"
+      },
+      {
+        "uuid": "ad22689c-7499-42bd-8b24-26dbad038fbc",
+        "name": "Private hospital/Clinic Vikasnagar"
+      },
+      {
+        "uuid": "dbd1b4ed-c8c9-4488-a3b5-0065122e2241",
+        "name": "Private hospital/Clinic Chandigarh"
+      },
+      {
+        "uuid": "fc9ba035-6bac-4c14-92a2-920f92605ac3",
+        "name": "Private hospital/Clinic Delhi"
+      },
+      {
+        "uuid": "338447ff-6f71-43cc-869f-5d705065a92e",
+        "name": "NGO/Trust hospital"
+      }
+    ]
+  },
+
   {
     "name": "Gestational age category at delivery",
     "uuid": "a85981dd-6772-43d7-acb5-c58b45d54910",
@@ -2224,6 +2318,10 @@
       {
         "uuid": "5f696f1e-e087-48cd-901b-54a431982219",
         "name": "Government hospital Uttarkashi"
+      },
+      {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
       },
       {
         "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
@@ -2844,6 +2942,37 @@
       {
         "uuid": "4d3c1af5-6c74-425f-9318-39d265891041",
         "name": "Personal saving"
+      }
+    ]
+  },
+  {
+    "name": "Personal savings for emergency medical expenditure",
+    "uuid": "bed7b1c6-f0ef-427e-bad3-3fb4b214ad3b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Less than 1000",
+        "uuid": "b560dc00-dc5b-4e2a-943f-6732b94156d6"
+      },
+      {
+        "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
+        "name": "1000-3000"
+      },
+      {
+        "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
+        "name": "3000-5000"
+      },
+      {
+        "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
+        "name": "5000-75000"
+      },
+      {
+        "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
+        "name": "7500-10000"
+      },
+      {
+        "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
+        "name": "10000-More"
       }
     ]
   },

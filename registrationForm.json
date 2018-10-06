@@ -1287,6 +1287,17 @@
           "displayOrder": 1
         },
         {
+          "name": "How much personal savings for emergency medical expenditure",
+          "uuid": "1373d1df-4fe2-4d71-a60a-3038e1a8772c",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Personal savings for emergency medical expenditure",
+            "uuid": "bed7b1c6-f0ef-427e-bad3-3fb4b214ad3b"
+          },
+          "displayOrder": 1.5
+        },
+        {
           "name": "Whether any health related awareness/information received in last 1 year",
           "uuid": "9db81a53-82de-4b87-b473-20d812d40df2",
           "type": "SingleSelect",

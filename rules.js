@@ -16,8 +16,6 @@ const WithStatusBuilder = StatusBuilderAnnotationFactory('individual', 'formElem
 @RegistrationViewFilter("f24d531d-355c-403d-8325-7d2ea0661496", "Kalap Registration View Filter", 100.0, {})
 class RegistrationHandlerKalap {
     static exec(individual, formElementGroup) {
-        console.log("exec");
-        console.log(formElementGroup.name);
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new RegistrationHandlerKalap(), individual, formElementGroup);
     }
@@ -55,7 +53,6 @@ class RegistrationHandlerKalap {
     }
 
     healthcareExperienceAtInpatientFacility(individual, formElementGroup) {
-        console.log("came to healthcareExperienceAtInpatientFacility");
         return formElementGroup.formElements.map(fe=>{
             let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:fe});
         statusBuilder.show().when.valueInRegistration("Type of facility visited by family members in last 12 months").containsAnyAnswerConceptName("Inpatient", "Both");
@@ -65,7 +62,6 @@ class RegistrationHandlerKalap {
 
 
     doTheyVisitDoctorForARegularHealthCheckUp(individual, formElement) {
-        console.log("came to doTheyVisitDoctorForARegularHealthCheckUp");
         let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:formElement});
         let observation = individual.findObservation("Number of people above age 60 dependent on family");
         let value = observation && observation.getValue();
@@ -138,7 +134,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     whatDoYouUseWhenYouAreMenstruating([], statusBuilder) {
-        console.log("came to WhatDoYouUseWhenYouAreMenstruating");
         statusBuilder.skipAnswers('Old cloth', 'Sanitary pad', 'Falalin', 'Kit pad');
     }
 
@@ -154,12 +149,11 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     ifSanitaryNapkinHowDoYouDisposeIt([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Absorbent material used").containsAnyAnswerConceptName("Sanitary pad");
+        statusBuilder.show().when.valueInRegistration("Absorbent material used").containsAnyAnswerConceptName("Sanitary napkin");
     }
 
     @WithStatusBuilder
     antenatalCheckUpForLastChildDone([], statusBuilder) {
-        console.log("came to antenatalCheckUpForLastChildDone");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -177,7 +171,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     immunizationForPregnantWoman([], statusBuilder) {
-        console.log("came to immunizationForPregnantWoman");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -185,7 +178,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     haveYouReceivedNutritionalSupplementsFromAnganwadiDuringPregnancy([], statusBuilder) {
-        console.log("came to haveYouReceivedNutritionalSupplementsFromAnganwadiDuringPregnancy");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -193,19 +185,16 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     nutritionalSupplementsReceivedFromAnganwadiDuringPregnancy([], statusBuilder) {
-        console.log("came to nutritionalSupplementsReceivedFromAnganwadiDuringPregnancy");
         statusBuilder.show().when.valueInRegistration("Whether nutritional supplements received from anganwadi during pregnancy").is.yes;
     }
 
     @WithStatusBuilder
     durationForReceivingNutritionalSupplementsFromAnganwadiDuringPregnancy([], statusBuilder) {
-        console.log("came to durationForReceivingNutritionalSupplementsFromAnganwadiDuringPregnancy");
         statusBuilder.show().when.valueInRegistration("Whether nutritional supplements received from anganwadi during pregnancy").is.yes;
     }
 
     @WithStatusBuilder
     haemoglobinTestConductedDuringPregnancy([], statusBuilder) {
-        console.log("came to haemoglobinTestConductedDuringPregnancy");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -213,19 +202,16 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     isTheReportAvailable([], statusBuilder) {
-        console.log("came to isTheReportAvailable");
         statusBuilder.show().when.valueInRegistration("Whether haemoglobin test conducted during pregnancy").is.yes;
     }
 
     @WithStatusBuilder
     haemoglobinValue([], statusBuilder) {
-        console.log("came to haemoglobinValue");
         statusBuilder.show().when.valueInRegistration("Whether haemoglobin report available").is.yes;
     }
 
     @WithStatusBuilder
     haveYouReceivedIfaSupplementation([], statusBuilder) {
-        console.log("came to haveYouReceivedIfaSupplementation");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -233,39 +219,34 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     ifYesReceivedIfaSupplementationForHowLong([], statusBuilder) {
-        console.log("came to ifYesReceivedIfaSupplementationForHowLong");
         statusBuilder.show().when.valueInRegistration("Whether IFA supplementation received").is.yes;
     }
 
     @WithStatusBuilder
     numberOfIfaTabletsReceived([], statusBuilder) {
-        console.log("came to numberOfIfaTabletsReceived");
         statusBuilder.show().when.valueInRegistration("Whether IFA supplementation received").is.yes;
     }
 
     @WithStatusBuilder
     ifIfaTabletsNotConsumedWhy([], statusBuilder) {
-        console.log("came to ifIfaTabletsNotConsumedWhy");
         statusBuilder.show().when.valueInRegistration("Whether IFA supplementation received").is.yes;
     }
 
     @WithStatusBuilder
     ifaReceivedAt([], statusBuilder) {
-        console.log("came to ifaReceivedAt");
         statusBuilder.show().when.valueInRegistration("Whether IFA supplementation received").is.yes;
     }
 
     @WithStatusBuilder
     placeOfDelivery([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Parity");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
+        statusBuilder.skipAnswers('Home', 'Sub Center', 'Primary Health Center', 'Regional Hospital', 'NGO Hospital');
     }
 
     @WithStatusBuilder
     gestationalAgeCategoryAtDelivery([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Parity");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -273,7 +254,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     haveYouReceivedMotherAndChildProtectionMcpCard([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -281,7 +261,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     haveYouReceivedAnyPostnatalCareWithin2DaysOfDelivery([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Parity");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -289,7 +268,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     postnatalCareProvider([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Parity");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -297,7 +275,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     didYouReceiveFinancialAssistanceUnderJananiSurakshaYojna([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -305,7 +282,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     expenditureOnMedicalServicesDuringPregnancy([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -313,7 +289,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     expenditureOnTravelFoodAndStayDuringPregnancy([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -321,7 +296,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     lossOfWagesDuringPregnancy([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -329,7 +303,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     pastPregnancyComplications([], statusBuilder) {
-        console.log("came to placeOfDelivery");
         let obs = statusBuilder.context.individual.findObservation("Gravida");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
@@ -388,6 +361,10 @@ class RegistrationHandlerKalap {
         statusBuilder.show().when.valueInRegistration("Whether any health related awareness/information received in last 1 year").is.yes;
     }
 
+    @WithStatusBuilder
+    howMuchPersonalSavingsForEmergencyMedicalExpenditure([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Source of finance to deal with health emergency").containsAnyAnswerConceptName("Personal saving");
+    }
 
 
 }
