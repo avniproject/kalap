@@ -108,7 +108,7 @@ class RegistrationHandlerKalap {
     }
 
     @WithStatusBuilder
-    tbTreatmentCentre([], statusBuilder) {
+    tbTreatment([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
     }
 
@@ -268,9 +268,7 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     postnatalCareProvider([], statusBuilder) {
-        let obs = statusBuilder.context.individual.findObservation("Parity");
-        let value = obs && obs.getValue();
-        statusBuilder.show().whenItem(value).is.greaterThan(0);
+        statusBuilder.show().when.valueInRegistration("Whether received any postnatal care within 2 days of delivery").is.yes;
     }
 
     @WithStatusBuilder
@@ -352,7 +350,7 @@ class RegistrationHandlerKalap {
     }
 
     @WithStatusBuilder
-    whetherFamilyMembersWashHandsWithSoapAfterCleaningTheLivestockPen([], statusBuilder) {
+    whetherFamilyMembersWashHandsAndFeetWithSoapAfterCleaningTheLivestockPen([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether family owns livestock").is.yes;
     }
 

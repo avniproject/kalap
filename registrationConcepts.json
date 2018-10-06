@@ -16,7 +16,7 @@
     "name": "Anganwadi worker"
   },
   {
-    "name": "Questionairre ID",
+    "name": "Questionnaire ID",
     "uuid": "24b480b1-5fb4-47f4-a03d-5afc603bb30c",
     "dataType": "Text"
   },
@@ -51,7 +51,7 @@
     "dataType": "Numeric"
   },
   {
-    "name": "Number of male childre in family",
+    "name": "Number of male children in family",
     "uuid": "60dd6d59-eab6-4a19-8d3a-eaf66b1cefe1",
     "dataType": "Numeric"
   },
@@ -114,7 +114,7 @@
   },
   {
     "uuid": "f62e2ac5-4345-4cbf-a5cc-4958e81ded3d",
-    "name": "Subcentre Duni"
+    "name": "Subcentre Doni"
   },
   {
     "uuid": "acfe39a7-11ef-4074-a22d-b5adbbc8ebfa",
@@ -195,7 +195,7 @@
     "answers": [
       {
         "uuid": "f62e2ac5-4345-4cbf-a5cc-4958e81ded3d",
-        "name": "Subcentre Duni"
+        "name": "Subcentre Doni"
       },
       {
         "uuid": "acfe39a7-11ef-4074-a22d-b5adbbc8ebfa",
@@ -419,19 +419,19 @@
   },
   {
     "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-    "name": "1000-3000"
+    "name": "1001-3000"
   },
   {
     "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-    "name": "3000-5000"
+    "name": "3001-5000"
   },
   {
     "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-    "name": "5000-75000"
+    "name": "5001-7500"
   },
   {
     "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-    "name": "7500-10000"
+    "name": "7501-10000"
   },
   {
     "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -452,19 +452,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -487,19 +487,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -522,19 +522,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -608,7 +608,7 @@
   },
   {
     "uuid": "b500ef26-f5ce-475b-be51-acf603636d76",
-    "name": "Infectitous disease"
+    "name": "Infectious disease"
   },
   {
     "uuid": "2aafb4b0-3316-4049-98a9-7842d8ec08ed",
@@ -633,7 +633,7 @@
       },
       {
         "uuid": "b500ef26-f5ce-475b-be51-acf603636d76",
-        "name": "Infectitous disease"
+        "name": "Infectious disease"
       },
       {
         "uuid": "c588c99a-fa04-4560-81ad-c93e4dab7bfb",
@@ -742,19 +742,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -777,19 +777,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -812,19 +812,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -951,10 +951,6 @@
       {
         "uuid": "338447ff-6f71-43cc-869f-5d705065a92e",
         "name": "NGO/Trust hospital"
-      },
-      {
-        "uuid": "c3cfdcbc-42b9-4f9b-9bae-b30f000c5749",
-        "name": "Traditional method"
       }
     ]
   },
@@ -1115,7 +1111,7 @@
     ]
   },
   {
-    "name": "TB treatment centre",
+    "name": "TB treatment",
     "uuid": "7b1efcf4-35df-4b01-be14-4be50e3f9acb",
     "dataType": "Coded",
     "answers": [
@@ -1192,19 +1188,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -1227,19 +1223,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -1262,19 +1258,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -1628,7 +1624,8 @@
       },
       {
         "uuid": "99e112c0-169e-4fc2-9c2d-5dd735db42f2",
-        "name": "All of them"
+        "name": "All of them",
+        "unique": true
       }
     ]
   },
@@ -1818,7 +1815,7 @@
   },
   {
     "uuid": "142e601d-9cd1-4eab-9657-c2156476814a",
-    "name": "At home with qualified attender"
+    "name": "At home with qualified attendee"
   },
   {
     "name": "IFA received at",
@@ -1899,7 +1896,7 @@
       },
       {
         "uuid": "142e601d-9cd1-4eab-9657-c2156476814a",
-        "name": "At home with qualified attender"
+        "name": "At home with qualified attendee"
       },
       {
         "uuid": "27ad1cc9-bf28-4533-ad57-df846e77183c",
@@ -2069,19 +2066,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -2104,19 +2101,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -2139,19 +2136,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
@@ -2714,7 +2711,7 @@
     ]
   },
   {
-    "name": "Whether family members wash hands with soap after using toilet",
+    "name": "Whether family members wash hands and feet with soap after using toilet",
     "uuid": "23a483fe-5f13-47d8-a879-3311d4814e94",
     "dataType": "Coded",
     "answers": [
@@ -2888,7 +2885,7 @@
     "name": "Water filter"
   },
   {
-    "name": "Water filteration method",
+    "name": "Water filtration method",
     "uuid": "eb233f01-5909-4fe3-a172-20a354dcb7c5",
     "dataType": "Coded",
     "answers": [
@@ -2956,19 +2953,19 @@
       },
       {
         "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-        "name": "1000-3000"
+        "name": "1001-3000"
       },
       {
         "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-        "name": "3000-5000"
+        "name": "3001-5000"
       },
       {
         "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-        "name": "5000-75000"
+        "name": "5001-7500"
       },
       {
         "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-        "name": "7500-10000"
+        "name": "7501-10000"
       },
       {
         "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
