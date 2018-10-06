@@ -108,7 +108,39 @@ class RegistrationHandlerKalap {
         return statusBuilder.build();
     }
 
+    @WithStatusBuilder
+    reasonForDeathEventInTheFamilyInLast1Year([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether death event in the family in last 1 year").is.yes;
+    }
 
+    @WithStatusBuilder
+    reasonForMobilityIssuesInFamily([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether anyone in family has mobility issues").is.yes;
+    }
+     @WithStatusBuilder
+     isToiletSharedWithAnotherFamily([], statusBuilder) {
+            statusBuilder.show().when.valueInRegistration("Whether toilet at home").is.yes;
+    }
+
+    @WithStatusBuilder
+    toiletVerifedByTheInterviewer([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether toilet at home").is.yes;
+    }
+
+    @WithStatusBuilder
+    frequencyOfCleaningLivestockPen([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family owns livestock").is.yes;
+    }
+
+    @WithStatusBuilder
+    whetherFamilyMembersWashHandsWithSoapAfterCleaningTheLivestockPen([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family owns livestock").is.yes;
+    }
+
+    @WithStatusBuilder
+    sourceOfRecievingHealthRelatedAwarenessInformationInLast1Year([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether any health related awareness/information received in last 1 year").is.yes;
+    }
 
 
 
