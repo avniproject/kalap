@@ -21,7 +21,7 @@ server:= $(if $(server),$(server),http://localhost)
 server_url:=$(server):$(port)
 
 su:=$(shell id -un)
-org_name=Kalap
+org_name=Kalap Base
 
 define _curl
 	curl -X $(1) $(server_url)/$(2) -d $(3)  \
@@ -32,10 +32,8 @@ define _curl
 	@echo
 endef
 
-# <create_org>
-create_org: ## Create JSS org and user+privileges
-	psql -U$(su) openchs < create_organisation.sql
-# </create_org>
+create_orgs:
+	psql -U$(su) openchs < create_orgs.sql
 
 # <refdata>
 deploy_concepts:
@@ -61,7 +59,7 @@ deploy_rules: ##
 # </deploy>
 
 # <c_d>
-create_deploy: create_org deploy ##
+create_deploy: create_orgs deploy ##
 # </c_d>
 
 deps:
