@@ -51,15 +51,6 @@ class RegistrationHandlerKalap {
         return statusBuilder.build();
         })
     }
-    //
-    // abc(individual, formElementGroup) {
-    //     return formElementGroup.formElements.map(fe=>{
-    //         let statusBuilder = new FormElementStatusBuilder({individual, fe});
-    //     statusBuilder.show().when.valueInRegistration("Type of facility visited by family members in last 12 months").containsAnswerConceptName("Outpatient");
-    //     return statusBuilder.build();
-    //     })
-    // }
-
     healthcareExperienceAtInpatientFacility(individual, formElementGroup) {
         return formElementGroup.formElements.map(fe=>{
             let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:fe});
@@ -97,10 +88,53 @@ class RegistrationHandlerKalap {
         statusBuilder.show().when.valueInRegistration("Whether elderly family members visit doctor for regular health checkup").is.no;
     }
 
+    @WithStatusBuilder
+    howManyCases([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
+    }
 
+    @WithStatusBuilder
+    whereWereTheCasesDiagnosed([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
+    }
 
+    @WithStatusBuilder
+    howManyPatientsInFamilyDidNotCompleteTbTreatment([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
+    }
 
+    @WithStatusBuilder
+    reasonForAnyoneNotCompletingTbTreatment([], statusBuilder) {
+        console.log("came to reasonForAnyoneNotCompletingTbTreatment");
+        let obs = statusBuilder.context.individual.findObservation("Number of TB patients in family who did not complete treatment");
+        let value = obs && obs.getValue();
+        statusBuilder.show().whenItem(value).is.greaterThan(0);
+    }
 
+    @WithStatusBuilder
+    tbTreatmentCentre([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
+    }
+
+    @WithStatusBuilder
+    expenditureOnMedicalServicesDuringTbTreatmentOfFamilyMembers([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
+    }
+
+    @WithStatusBuilder
+    expenditureOnTravelFoodAndStayDuringTbTreatmentOfFamilyMembers([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
+    }
+
+    @WithStatusBuilder
+    lossOfWagesDuringTbTreatmentOfFamilyMembers([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
+    }
+
+    @WithStatusBuilder
+    numberOfPeopleWhoHaveDiedOfTbInTheFamily([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
+    }
 
     ifYesHaveTheyUndergoneTreatmentForTheseConditions(individual,formElement){
         const  statusBuilder = this._getStatusBuilder(individual, formElement);

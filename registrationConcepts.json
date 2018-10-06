@@ -974,7 +974,7 @@
     ]
   },
   {
-    "name": "Family with history of TB",
+    "name": "Whether family with history of TB",
     "uuid": "62fa013d-ef41-4612-88eb-efd2bf12670f",
     "dataType": "Coded",
     "answers": [
@@ -1055,7 +1055,7 @@
     ]
   },
   {
-    "name": "Number of TB patients in family who completed treatment",
+    "name": "Number of TB patients in family who did not complete treatment",
     "uuid": "b158e19e-a930-44b7-a964-e3aac99e4b65",
     "dataType": "Numeric"
   },
@@ -1083,6 +1083,14 @@
       {
         "uuid": "e056b7fd-d651-4a80-b824-fb63e09daf92",
         "name": "Mobility"
+      },
+      {
+        "uuid": "f46aa429-1ba8-4ea9-a3aa-d05cf1f1ce34",
+        "name": "Side effects"
+      },
+      {
+        "uuid": "b7cb0404-cec5-4b45-97eb-20f4b6d0732a",
+        "name": "Unavailability of medicines"
       }
     ]
   },

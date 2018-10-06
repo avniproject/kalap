@@ -461,7 +461,7 @@
           "uuid": "fff55481-0fe5-4457-828d-3aa80cd7a408",
           "type": "SingleSelect",
           "concept": {
-            "name": "Family with history of TB",
+            "name": "Whether family with history of TB",
             "uuid": "62fa013d-ef41-4612-88eb-efd2bf12670f"
           },
           "displayOrder": 1
@@ -488,11 +488,11 @@
           "displayOrder": 3
         },
         {
-          "name": "How many patients in family completed TB treatment?",
+          "name": "How many patients in family did not complete TB treatment?",
           "uuid": "1bfc38cf-77b1-4ed3-9565-2580d0682a05",
           "keyValues": [],
           "concept": {
-            "name": "Number of TB patients in family who completed treatment",
+            "name": "Number of TB patients in family who did not complete treatment",
             "uuid": "b158e19e-a930-44b7-a964-e3aac99e4b65"
           },
           "displayOrder": 4
