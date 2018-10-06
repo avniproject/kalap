@@ -826,7 +826,7 @@
     "dataType": "Numeric"
   },
   {
-    "name": "Elderly family members visit doctor for regular health checkup",
+    "name": "Whether elderly family members visit doctor for regular health checkup",
     "uuid": "4783fb7f-b558-485f-b178-62c69c1af722",
     "dataType": "Coded",
     "answers": [

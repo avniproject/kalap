@@ -11,7 +11,7 @@ import {
 
 const RegistrationViewFilter = RuleFactory("cc10c94c-c1b6-4957-8738-da4a3bc2ea09", "ViewFilter");
 
-const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
+const WithStatusBuilder = StatusBuilderAnnotationFactory('individual', 'formElement');
 
 @RegistrationViewFilter("f24d531d-355c-403d-8325-7d2ea0661496", "Kalap Registration View Filter", 100.0, {})
 class RegistrationHandlerKalap {
@@ -39,10 +39,9 @@ class RegistrationHandlerKalap {
         statusBuilder.skipAnswers('No');
     }
 
-    typeOfFacilityVisitedByFamilyMembersInLast12Months(individual, formElement) {
-        const statusBuilder = this._getStatusBuilder(individual, formElement);
-        statusBuilder.show().when.valueInRegistration("Family member visited healthcare facility in last 12 months").containsAnswerConceptName("Yes");
-        return statusBuilder.build();
+    @WithStatusBuilder
+    typeOfFacilityVisitedByFamilyMembersInLast12Months([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Family member visited healthcare facility in last 12 months").is.yes;
     }
 
     healthcareExperienceAtOutpatientFacility(individual, formElementGroup) {
@@ -60,6 +59,31 @@ class RegistrationHandlerKalap {
         return statusBuilder.build();
         })
     }
+
+    doTheyVisitDoctorForARegularHealthCheckUp(individual, formElement) {
+        let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:formElement});
+        let observation = individual.findObservation("Number of people above age 60 dependent on family");
+        let value = observation && observation.getValue();
+        statusBuilder.show().whenItem(value).greaterThan(0);
+        return statusBuilder.build();
+    }
+
+
+    @WithStatusBuilder
+    numberOfHealthCheckupVisitsAnnuallyByElderly([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether elderly family members visit doctor for regular health checkup").is.yes;
+    }
+
+    @WithStatusBuilder
+    facilityVisitedByElderly([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether elderly family members visit doctor for regular health checkup").is.yes;
+    }
+
+    @WithStatusBuilder
+    reasonForNotDoingRegularHealthCheckUpsByElderly([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether elderly family members visit doctor for regular health checkup").is.no;
+    }
+
 
 
 }
