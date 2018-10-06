@@ -195,12 +195,12 @@
           "displayOrder": 1
         },
         {
-          "name": "Type of facility",
+          "name": "Type of facility visited by family members in last 12 months",
           "uuid": "6323839f-620f-400c-9f05-e1e7270ecc8f",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Type of facility",
+            "name": "Type of facility visited by family members in last 12 months",
             "uuid": "e378b199-3847-4652-acee-23938fc48b9a"
           },
           "displayOrder": 2
@@ -209,8 +209,8 @@
     },
     {
       "uuid": "3a0fafb9-93d6-4185-a95d-365332a7d8d3",
-      "name": "Healthcare Experience - Outpatient Facility",
-      "display": "Healthcare Experience - Outpatient Facility",
+      "name": "abc",
+      "display": "abc",
       "displayOrder": 5,
       "formElements": [
         {
@@ -268,12 +268,12 @@
           "displayOrder": 5
         },
         {
-          "name": "Expenditure on travel during outpatient facility visits",
+          "name": "Expenditure on travel, food and stay during outpatient facility visits",
           "uuid": "ceab434c-3119-4b5b-9543-016976f59d79",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Expenditure on travel during outpatient facility visits",
+            "name": "Expenditure on travel, food and stay during outpatient facility visits",
             "uuid": "e717cdf8-b5e1-47ee-bb04-56742dc0fb62"
           },
           "displayOrder": 6
@@ -364,12 +364,12 @@
           "displayOrder": 6
         },
         {
-          "name": "Expenditure on travel during inpatient facility visits",
+          "name": "Expenditure on travel, food and stay during inpatient facility visits",
           "uuid": "e29af123-ffe1-45e9-ad72-a8eb10e189b7",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Expenditure on travel during inpatient facility visits",
+            "name": "Expenditure on travel, food and stay during inpatient facility visits",
             "uuid": "f01b6e18-94ad-40f6-9658-4edff4886602"
           },
           "displayOrder": 7
@@ -530,12 +530,12 @@
           "displayOrder": 7
         },
         {
-          "name": "Expenditure on travel during TB treatment of family members",
+          "name": "Expenditure on travel, food and stay during TB treatment of family members",
           "uuid": "b8823db3-1ca6-49f8-983a-be571a4698f5",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Expenditure on travel during TB treatment of family members",
+            "name": "Expenditure on travel, food and stay during TB treatment of family members",
             "uuid": "18d11f83-ce27-4516-8bf9-562391cdcbf7"
           },
           "displayOrder": 8
@@ -906,12 +906,12 @@
           "displayOrder": 32
         },
         {
-          "name": "Expenditure on travel during pregnancy",
+          "name": "Expenditure on travel, food and stay during pregnancy",
           "uuid": "ecb8118c-d0f0-4fcd-a13e-38a7c6883727",
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "name": "Expenditure on travel during pregnancy",
+            "name": "Expenditure on travel, food and stay during pregnancy",
             "uuid": "e717cdf8-b5e1-47ee-bb04-56742dc0fb62"
           },
           "displayOrder": 33

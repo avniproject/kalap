@@ -89,7 +89,7 @@
     "name": "Inpatient"
   },
   {
-    "name": "Type of facility",
+    "name": "Type of facility visited by family members in last 12 months",
     "uuid": "e378b199-3847-4652-acee-23938fc48b9a",
     "dataType": "Coded",
     "answers": [
@@ -465,7 +465,7 @@
     ]
   },
   {
-    "name": "Expenditure on travel during outpatient facility visits",
+    "name": "Expenditure on travel, food and stay during outpatient facility visits",
     "uuid": "e717cdf8-b5e1-47ee-bb04-56742dc0fb62",
     "dataType": "Coded",
     "answers": [
@@ -751,7 +751,7 @@
     ]
   },
   {
-    "name": "Expenditure on travel during inpatient facility visits",
+    "name": "Expenditure on travel, food and stay during inpatient facility visits",
     "uuid": "f01b6e18-94ad-40f6-9658-4edff4886602",
     "dataType": "Coded",
     "answers": [
@@ -1181,7 +1181,7 @@
     ]
   },
   {
-    "name": "Expenditure on travel during TB treatment of family members",
+    "name": "Expenditure on travel, food and stay during TB treatment of family members",
     "uuid": "18d11f83-ce27-4516-8bf9-562391cdcbf7",
     "dataType": "Coded",
     "answers": [
@@ -1988,7 +1988,7 @@
     ]
   },
   {
-    "name": "Expenditure on travel during pregnancy",
+    "name": "Expenditure on travel, food and stay during pregnancy",
     "uuid": "e717cdf8-b5e1-47ee-bb04-56742dc0fb62",
     "dataType": "Coded",
     "answers": [
