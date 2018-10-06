@@ -59,12 +59,13 @@ class RegistrationHandlerKalap {
     //     return statusBuilder.build();
     //     })
     // }
-    
+
     healthcareExperienceAtInpatientFacility(individual, formElementGroup) {
         return formElementGroup.formElements.map(fe=>{
             let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:fe});
         statusBuilder.show().when.valueInRegistration("Type of facility visited by family members in last 12 months").containsAnyAnswerConceptName("Inpatient", "Both");
-
+        })
+    }
 
     facilityFromWhereChildRecievedImmunization(individual,formElement){
         const  statusBuilder = this._getStatusBuilder(individual, formElement);
@@ -94,6 +95,17 @@ class RegistrationHandlerKalap {
     @WithStatusBuilder
     reasonForNotDoingRegularHealthCheckUpsByElderly([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether elderly family members visit doctor for regular health checkup").is.no;
+    }
+
+
+
+
+
+
+    ifYesHaveTheyUndergoneTreatmentForTheseConditions(individual,formElement){
+        const  statusBuilder = this._getStatusBuilder(individual, formElement);
+        statusBuilder.show().when.valueInRegistration("Other health conditions in past 1 year in family").containsAnyAnswerConceptName("Respiratory disorders","Oral health disorders","Mental health issues","Sexual health disorders","Animal attack, snake bite, insect bite");
+        return statusBuilder.build();
     }
 
 
