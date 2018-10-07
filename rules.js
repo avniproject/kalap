@@ -142,8 +142,25 @@ class RegistrationHandlerKalap {
         statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
     }
 
+    womensHealth(individual, formElementGroup) {
+        console.log("came to womens health");
+        const numberOfFemaleAdultsInFamilyObs = individual.findObservation("Number of female adults in family");
+        const numberOfFemaleAdultsInFamily = numberOfFemaleAdultsInFamilyObs && numberOfFemaleAdultsInFamilyObs.getValue();
+
+        return formElementGroup.formElements.map(fe => {
+            let lstatusBuilder = new FormElementStatusBuilder({individual: individual, formElement: fe});
+        lstatusBuilder.show().whenItem(numberOfFemaleAdultsInFamily).is.greaterThan(0);
+        return lstatusBuilder.build();
+        })
+    }
+
     @WithStatusBuilder
     whatDoYouUseWhenYouAreMenstruating([], statusBuilder) {
+
+        const numberOfFemaleAdultsInFamilyObs = statusBuilder.context.individual.findObservation("Number of female adults in family");
+        const numberOfFemaleAdultsInFamily = numberOfFemaleAdultsInFamilyObs && numberOfFemaleAdultsInFamilyObs.getValue();
+        statusBuilder.show().whenItem(numberOfFemaleAdultsInFamily).is.greaterThan(0);
+
         statusBuilder.skipAnswers('Old cloth', 'Sanitary pad', 'Falalin', 'Kit pad');
     }
 
