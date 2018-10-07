@@ -170,6 +170,11 @@ class RegistrationHandlerKalap {
     }
 
     @WithStatusBuilder
+    whenWasTheAncRegistrationDone([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether antenatal check-up for last child done").is.yes;
+    }
+
+    @WithStatusBuilder
     numberOfAncCheckUps([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether antenatal check-up for last child done").is.yes;
     }
@@ -238,8 +243,14 @@ class RegistrationHandlerKalap {
     }
 
     @WithStatusBuilder
-    ifIfaTabletsNotConsumedWhy([], statusBuilder) {
+    ifaTabletsConsumed([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether IFA supplementation received").is.yes;
+    }
+
+    @WithStatusBuilder
+    ifIfaTabletsNotConsumedWhy([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("IFA tablets consumed")
+            .containsAnyAnswerConceptName("None", "Partially");
     }
 
     @WithStatusBuilder

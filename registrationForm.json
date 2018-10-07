@@ -788,6 +788,19 @@
           "displayOrder": 11
         },
         {
+          "name": "When was the ANC registration done?",
+          "uuid": "c67fb8f8-fcda-4ff7-ad75-cd2906c9014b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Timing of ANC registration with respect to pregnancy",
+            "uuid": "1657d9d3-b7bb-4924-a526-2b7d1d4aed5b"
+          },
+          "displayOrder": 11.5,
+          "mandatory": true
+        },
+
+        {
           "name": "Number of ANC check-ups",
           "uuid": "c6377bc1-1c1d-4347-83ce-3affaf167ae3",
           "mandatory": true,
@@ -925,11 +938,23 @@
           "displayOrder": 23
         },
         {
+          "name": "IFA tablets consumed",
+          "uuid": "ea6847d1-e3f3-4f6d-9a0d-30aa1161c7f8",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "IFA tablets consumed",
+            "uuid": "e1c92d9e-0769-4d38-b106-21f8172a27c3"
+          },
+          "displayOrder": 23.5,
+          "mandatory": true
+        },
+        {
           "name": "If IFA tablets not consumed, why?",
           "uuid": "e2fd5200-7d65-4082-b35b-e7f6d016cb92",
           "mandatory": true,
           "keyValues": [],
-          "type": "SingleSelect",
+          "type": "MultiSelect",
           "concept": {
             "name": "Reason for not consuming IFA tablets",
             "uuid": "8d9a3016-6c2a-404a-b8ad-4408ddc16746"
