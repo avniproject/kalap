@@ -1428,6 +1428,10 @@
       {
         "uuid": "a1d32ecd-2299-46c4-8f7f-b96d667227d0",
         "name": "Normal/Boiling water with soap/disinfectant"
+      },
+      {
+        "name": "None",
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539"
       }
     ]
   },
