@@ -109,6 +109,7 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     tbTreatment([], statusBuilder) {
+        console.log("came to tbTreatment");
         statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
     }
 
@@ -305,6 +306,26 @@ class RegistrationHandlerKalap {
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
     }
+
+    childHealth(individual, formElementGroup) {
+
+        const numberOfMaleChildrenInFamilyObs = individual.findObservation("Number of male children in family");
+        const numberOfMaleChildrenInFamily = numberOfMaleChildrenInFamilyObs && numberOfMaleChildrenInFamilyObs.getValue();
+        const numberOfFemaleChildrenInFamilyObs = individual.findObservation("Number of female children in family");
+        const numberOfFemaleChildrenInFamily = numberOfFemaleChildrenInFamilyObs && numberOfFemaleChildrenInFamilyObs.getValue();
+        const numberOfOtherSexChildrenInFamilyObs = individual.findObservation("Number of other sex children in family");
+        const numberOfOtherSexChildrenInFamily = numberOfOtherSexChildrenInFamilyObs && numberOfOtherSexChildrenInFamilyObs.getValue();
+
+        const totalNumberOfChildrenInFamily = numberOfMaleChildrenInFamily + numberOfFemaleChildrenInFamily + numberOfOtherSexChildrenInFamily;
+
+        return formElementGroup.formElements.map(fe => {
+            let lstatusBuilder = new FormElementStatusBuilder({individual: individual, formElement: fe});
+        lstatusBuilder.show().whenItem(totalNumberOfChildrenInFamily).is.greaterThan(0);
+        return lstatusBuilder.build();
+    })
+
+    }
+
 
     facilityFromWhereChildRecievedImmunization(individual,formElement){
         const  statusBuilder = this._getStatusBuilder(individual, formElement);
