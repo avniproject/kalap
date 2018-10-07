@@ -60,6 +60,16 @@ class RegistrationHandlerKalap {
         })
     }
 
+    @WithStatusBuilder
+    numberOfTimesRsbyAvailedInLast1Year([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether RSBY issued").is.yes;
+    }
+
+    @WithStatusBuilder
+    numberOfTimesMsbyAvailedInLast1Year([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether MSBY issued").is.yes;
+    }
+
 
     doTheyVisitDoctorForARegularHealthCheckUp(individual, formElement) {
         let statusBuilder = new FormElementStatusBuilder({individual:individual, formElement:formElement});
@@ -109,7 +119,6 @@ class RegistrationHandlerKalap {
 
     @WithStatusBuilder
     tbTreatment([], statusBuilder) {
-        console.log("came to tbTreatment");
         statusBuilder.show().when.valueInRegistration("Whether family with history of TB").is.yes;
     }
 

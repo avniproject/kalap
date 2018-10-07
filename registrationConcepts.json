@@ -833,6 +833,42 @@
     ]
   },
   {
+    "name": "Whether RSBY issued",
+    "uuid": "2d83aa1f-fc24-4b16-8739-22851b9f9e96",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Whether MSBY issued",
+    "uuid": "672d9c68-930e-402d-aa99-89c679d8a082",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Number of times RSBY availed in last 1 year",
+    "uuid": "f00cd9d4-f411-4db1-9ae6-6d7a6397f4fd",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of times MSBY availed in last 1 year",
+    "uuid": "7dddcfae-b1c2-41e7-8aa1-416a1704d769",
+    "dataType": "Numeric"
+  },
+  {
     "name": "Number of people above age 60 dependent on family",
     "uuid": "9a940132-aa3b-4c2f-bc6c-f5204395eda6",
     "dataType": "Numeric"
@@ -1316,6 +1352,10 @@
       {
         "uuid": "7699c9e0-aad0-4e20-840f-2012dd220dfc",
         "name": "Daughter-in-law"
+      },
+      {
+        "name": "Self",
+        "uuid": "74466f64-3f7c-4046-aaae-57803cee46b1"
       }
     ]
   },

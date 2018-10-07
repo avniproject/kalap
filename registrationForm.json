@@ -417,6 +417,50 @@
             "uuid": "f60c5a7e-6fe7-49e3-b4fc-053956459ad3"
           },
           "displayOrder": 8
+        },
+        {
+          "name": "Whether RSBY issued",
+          "uuid": "bc1a7dc0-fea9-4bb3-8484-d39ac84830dc",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether RSBY issued",
+            "uuid": "2d83aa1f-fc24-4b16-8739-22851b9f9e96"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        },
+        {
+          "name": "Number of times RSBY availed in last 1 year",
+          "uuid": "e692162d-744e-42a7-b0cd-1407dddb8088",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of times RSBY availed in last 1 year",
+            "uuid": "f00cd9d4-f411-4db1-9ae6-6d7a6397f4fd"
+          },
+          "displayOrder": 10,
+          "mandatory": true
+        },
+        {
+          "name": "Whether MSBY issued",
+          "uuid": "5284d2c4-eec9-454e-9f36-1f674ec0473d",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether MSBY issued",
+            "uuid": "672d9c68-930e-402d-aa99-89c679d8a082"
+          },
+          "displayOrder": 11,
+          "mandatory": true
+        },
+        {
+          "name": "Number of times MSBY availed in last 1 year",
+          "uuid": "d97682e7-6f37-4236-9f5a-87826ec06493",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of times MSBY availed in last 1 year",
+            "uuid": "7dddcfae-b1c2-41e7-8aa1-416a1704d769"
+          },
+          "displayOrder": 12,
+          "mandatory": true
         }
       ]
     },
