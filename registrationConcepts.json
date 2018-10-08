@@ -362,7 +362,8 @@
       },
       {
         "uuid": "a10ec6ea-4b94-4b77-bf2e-0746c7aa7139",
-        "name": "Don't remember"
+        "name": "Don't remember",
+        "unique": true
       }
     ]
   },
@@ -413,7 +414,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique": true
       }
     ]
   },
@@ -657,7 +659,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique": true
       }
     ]
   },
@@ -688,7 +691,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique": true
       }
     ]
   },
@@ -1431,7 +1435,8 @@
       },
       {
         "name": "None",
-        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539"
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
       }
     ]
   },
@@ -1856,7 +1861,8 @@
       },
       {
         "name": "None",
-        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539"
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
       },
       {
         "uuid": "e6d8b555-1cf4-4ec2-b468-68a434c2ad74",
@@ -2513,7 +2519,8 @@
       },
       {
         "name": "None",
-        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539"
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
       }
     ]
   },
@@ -2556,7 +2563,8 @@
       },
       {
         "name": "None",
-        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539"
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
       }
     ]
   },
@@ -2607,7 +2615,8 @@
       },
       {
         "name": "None",
-        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539"
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
       }
     ]
   },
@@ -2704,7 +2713,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique": true
       }
     ]
   },
@@ -3010,6 +3020,11 @@
       {
         "uuid": "f8de7783-d0ca-493a-93be-14d41aad5de8",
         "name": "Water filter"
+      },
+      {
+        "name": "None",
+        "uuid": "ebda5e05-a995-43ca-ad1a-30af3b937539",
+        "unique": true
       }
     ]
   },
