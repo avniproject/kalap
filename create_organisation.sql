@@ -2,6 +2,7 @@ CREATE ROLE kalap
   NOINHERIT
   PASSWORD 'password';
 
+ALTER ROLE kalap WITH LOGIN;
 GRANT kalap TO openchs;
 
 GRANT ALL ON ALL TABLES IN SCHEMA public TO kalap;
