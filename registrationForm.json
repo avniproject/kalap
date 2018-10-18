@@ -33,6 +33,7 @@
           "uuid": "81d6985d-2518-40b6-8de0-fef0b479e410",
           "mandatory": true,
           "keyValues": [],
+          "type": "SingleSelect",
           "concept": {
             "name": "Education",
             "uuid": "39595a16-a9c6-49a5-a42b-3f462607058c"
@@ -56,6 +57,7 @@
           "uuid": "4799e47b-1b6b-4496-baf6-ff9e9536d4c3",
           "mandatory": true,
           "keyValues": [],
+          "type": "SingleSelect",
           "concept": {
             "name": "Marital status",
             "uuid": "aa6687c9-ba4d-49a3-9b3e-bba266eb6f32"
@@ -66,6 +68,7 @@
           "name": "Caste Category",
           "uuid": "9a76d9cb-7dcd-49d4-97a3-1dbf2757ab0a",
           "mandatory": true,
+          "type": "SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Caste Category",
@@ -77,6 +80,7 @@
           "name": "Economic Status",
           "uuid": "457069ff-4f83-4f63-93aa-d53c5e3bd35e",
           "mandatory": true,
+          "type": "SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Ration Card",
