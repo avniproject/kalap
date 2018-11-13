@@ -15,8 +15,9 @@ help:
 
 #server:=https://staging.openchs.org
 #port:=443
-token:=somethinghere
+#token:=somethinghere
 port:= $(if $(port),$(port),8021)
+password:= $(if $(password),$(password))
 server:= $(if $(server),$(server),http://localhost)
 server_url:=$(server):$(port)
 
@@ -75,6 +76,18 @@ deploy_refdata: deploy_concepts deploy_catchments
 # <deploy>
 deploy: deploy_refdata deploy_rules##
 # </deploy>
+
+
+deploy: deploy_admin_user deploy_refdata  deploy_rules
+
+deploy_admin_user_prod:
+	make auth deploy_admin_user poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD)
+
+deploy_prod:
+	make auth deploy_refdata deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=kalap-admin password=$(password)
+
+deploy_rules_prod:
+	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=kalap-admin password=$(password)
 
 # <deploy>
 deploy_rules: ##
