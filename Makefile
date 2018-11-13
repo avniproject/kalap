@@ -23,19 +23,40 @@ server_url:=$(server):$(port)
 su:=$(shell id -un)
 org_name=Kalap
 
+auth:
+	$(if $(poolId),$(eval token:=$(shell node scripts/token.js $(poolId) $(clientId) $(username) $(password))))
+	echo $(token)
+
+auth_live:
+	make auth poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) username=admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD)
+
 define _curl
 	curl -X $(1) $(server_url)/$(2) -d $(3)  \
 		-H "Content-Type: application/json"  \
-		-H "ORGANISATION-NAME: $(org_name)"  \
+		-H "USER-NAME: $(org_admin_name)"  \
 		$(if $(token),-H "AUTH-TOKEN: $(token)",)
 	@echo
 	@echo
 endef
 
+define _curl_as_openchs
+	curl -X $(1) $(server_url)/$(2) -d $(3)  \
+		-H "Content-Type: application/json"  \
+		-H "USER-NAME: admin"  \
+		$(if $(token),-H "AUTH-TOKEN: $(token)",)
+	@echo
+	@echo
+endef
+
+
 # <create_org>
 create_org: ## Create JSS org and user+privileges
 	psql -U$(su) openchs < create_organisation.sql
 # </create_org>
+
+deploy_admin_user:
+	$(call _curl_as_openchs,POST,users,@admin-user.json)
+
 
 # <refdata>
 deploy_concepts:
