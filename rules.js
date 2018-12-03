@@ -143,7 +143,6 @@ class RegistrationHandlerKalap {
     }
 
     womensHealth(individual, formElementGroup) {
-        console.log("came to womens health");
         const numberOfFemaleAdultsInFamilyObs = individual.findObservation("Number of female adults in family");
         const numberOfFemaleAdultsInFamily = numberOfFemaleAdultsInFamilyObs && numberOfFemaleAdultsInFamilyObs.getValue();
 
@@ -280,7 +279,7 @@ class RegistrationHandlerKalap {
         let obs = statusBuilder.context.individual.findObservation("Parity");
         let value = obs && obs.getValue();
         statusBuilder.show().whenItem(value).is.greaterThan(0);
-        statusBuilder.skipAnswers('Home', 'Sub Center', 'Primary Health Center', 'Regional Hospital', 'NGO Hospital');
+        statusBuilder.skipAnswers('Home', 'Sub Center', 'Primary Health Center', 'Regional Hospital', 'NGO Hospital', 'Government Hospital');
     }
 
     @WithStatusBuilder
