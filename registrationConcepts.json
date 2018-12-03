@@ -1333,18 +1333,6 @@
     "dataType": "Text"
   },
   {
-    "uuid": "77e9a994-23b5-4d88-bb16-c36dd3c3f58e",
-    "name": "Wife"
-  },
-  {
-    "uuid": "28b6b4bb-63c8-478a-93d3-a340ec13364c",
-    "name": "Daughter"
-  },
-  {
-    "uuid": "7699c9e0-aad0-4e20-840f-2012dd220dfc",
-    "name": "Daughter-in-law"
-  },
-  {
     "name": "Relationship with the head of the family",
     "uuid": "29e71291-9f60-4251-af98-d3b744e1d368",
     "dataType": "Coded",
