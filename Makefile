@@ -23,6 +23,7 @@ server_url:=$(server):$(port)
 
 su:=$(shell id -un)
 org_name=Kalap
+org_admin_name=admin@kalap
 
 auth:
 	$(if $(poolId),$(eval token:=$(shell node scripts/token.js $(poolId) $(clientId) $(username) $(password))))
@@ -74,7 +75,7 @@ deploy_refdata: deploy_concepts deploy_catchments
 # </refdata>
 
 # <deploy>
-deploy: deploy_refdata deploy_rules##
+#deploy: deploy_refdata deploy_rules##
 # </deploy>
 
 
