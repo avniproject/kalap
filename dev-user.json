@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "19ef6e31-f2b1-43f0-bcbf-d0f2fea5266f",
+    "name": "dev@kalap",
+    "password": "password",
+    "email": "dev@local",
+    "phoneNumber": "+919999999999",
+    "organisationUUID": "ac3e7bd0-5905-4b9f-a039-5f675e76eb21",
+    "catchmentUUID": "c618d178-79db-483e-8ebe-88b695a0eef4",
+    "operatingIndividualScope": "ByCatchment",
+    "admin": false,
+    "orgAdmin": false
+  }
+]

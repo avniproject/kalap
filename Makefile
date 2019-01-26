@@ -59,6 +59,8 @@ create_org: ## Create JSS org and user+privileges
 deploy_admin_user:
 	$(call _curl_as_openchs,POST,users,@admin-user.json)
 
+deploy_dev_user:
+	$(call _curl,POST,users,@dev-user.json)
 
 # <refdata>
 deploy_concepts:
@@ -68,18 +70,15 @@ deploy_concepts:
 deploy_catchments:
 	$(call _curl,POST,catchments,@catchments.json)
 
-deploy_refdata: deploy_concepts deploy_catchments
+deploy_locations:
+	$(call _curl,POST,locations,@locations.json)
+
+deploy_refdata: deploy_concepts deploy_locations deploy_catchments
 	$(call _curl,POST,forms,@registrationForm.json)
 	$(call _curl,POST,formMappings,@formMappings.json)
 
-# </refdata>
-
-# <deploy>
-#deploy: deploy_refdata deploy_rules##
-# </deploy>
-
-
-deploy: deploy_admin_user deploy_refdata  deploy_rules
+_deploy: deploy_admin_user deploy_refdata  deploy_rules
+deploy: _deploy deploy_dev_user
 
 deploy_admin_user_prod:
 	make auth deploy_admin_user poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=admin password=$(OPENCHS_PROD_ADMIN_USER_PASSWORD)
@@ -90,10 +89,8 @@ deploy_prod:
 deploy_rules_prod:
 	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=kalap-admin password=$(password)
 
-# <deploy>
 deploy_rules: ##
-	node index.js "$(server_url)" "$(token)"
-# </deploy>
+	node index.js "$(server_url)" "$(token)" "$(org_admin_name)"
 
 # <c_d>
 create_deploy: create_org deploy ##

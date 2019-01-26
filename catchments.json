@@ -5,228 +5,154 @@
       "name": "Kalap",
       "uuid": "c618d178-79db-483e-8ebe-88b695a0eef4",
       "type": "Village",
-      "addressLevels": [
+      "locations": [
         {
-            "name": "Bainol",
-            "uuid": "60ee0342-5bcf-4db4-950b-078875d3fba0",
-            "type": "Village",
-            "level": 1
+          "comment": "Bainol",
+          "uuid": "60ee0342-5bcf-4db4-950b-078875d3fba0"
         },
         {
-            "name": "Bhitri",
-            "uuid": "55074800-31de-44a3-a1c2-903eef5236d7",
-            "type": "Village",
-            "level": 1
+          "comment": "Bhitri",
+          "uuid": "55074800-31de-44a3-a1c2-903eef5236d7"
         },
         {
-            "name": "Dargargaon",
-            "uuid": "eb9e7d35-085b-4575-82f4-5ab254f4dc32",
-            "type": "Village",
-            "level": 1
+          "comment": "Dargargaon",
+          "uuid": "eb9e7d35-085b-4575-82f4-5ab254f4dc32"
         },
         {
-            "name": "Devra",
-            "uuid": "7bb1f256-0398-44fa-b01c-07b039887f8e",
-            "type": "Village",
-            "level": 1
+          "comment": "Devra",
+          "uuid": "7bb1f256-0398-44fa-b01c-07b039887f8e"
         },
         {
-            "name": "Dhara",
-            "uuid": "60dcab2f-68f4-4171-abf1-92c531f296a7",
-            "type": "Village",
-            "level": 1
+          "comment": "Dhara",
+          "uuid": "60dcab2f-68f4-4171-abf1-92c531f296a7"
         },
         {
-            "name": "Dhatmeer",
-            "uuid": "5d3fcbad-b2d7-4051-8f66-51ffc535cf8e",
-            "type": "Village",
-            "level": 1
+          "comment": "Dhatmeer",
+          "uuid": "5d3fcbad-b2d7-4051-8f66-51ffc535cf8e"
         },
         {
-            "name": "Doni",
-            "uuid": "85723e88-2900-40ba-9eea-24f6b602587f",
-            "type": "Village",
-            "level": 1
+          "comment": "Doni",
+          "uuid": "85723e88-2900-40ba-9eea-24f6b602587f"
         },
         {
-            "name": "Fitari",
-            "uuid": "9c01bfdd-e2bd-4179-809c-632ccdd2d3fc",
-            "type": "Village",
-            "level": 1
+          "comment": "Fitari",
+          "uuid": "9c01bfdd-e2bd-4179-809c-632ccdd2d3fc"
         },
         {
-            "name": "Gainchwangaon",
-            "uuid": "8e03d925-c18d-4864-8ab3-edd5b0a047ce",
-            "type": "Village",
-            "level": 1
+          "comment": "Gainchwangaon",
+          "uuid": "8e03d925-c18d-4864-8ab3-edd5b0a047ce"
         },
         {
-            "name": "Gangar",
-            "uuid": "31389865-d899-460f-995a-80cc05359c6f",
-            "type": "Village",
-            "level": 1
+          "comment": "Gangar",
+          "uuid": "31389865-d899-460f-995a-80cc05359c6f"
         },
         {
-            "name": "Gwalgaon",
-            "uuid": "2ba32311-30df-443b-98a8-2bf05e42e29d",
-            "type": "Village",
-            "level": 1
+          "comment": "Gwalgaon",
+          "uuid": "2ba32311-30df-443b-98a8-2bf05e42e29d"
         },
         {
-            "name": "Halwari",
-            "uuid": "faada1f8-6edc-43c2-bb92-5f4c46c8dc65",
-            "type": "Village",
-            "level": 1
+          "comment": "Halwari",
+          "uuid": "faada1f8-6edc-43c2-bb92-5f4c46c8dc65"
         },
         {
-            "name": "Jakhol",
-            "uuid": "8e17c837-95f2-4c48-9b3d-c8ff104116db",
-            "type": "Village",
-            "level": 1
+          "comment": "Jakhol",
+          "uuid": "8e17c837-95f2-4c48-9b3d-c8ff104116db"
         },
         {
-            "name": "Kalap",
-            "uuid": "70d06a04-9526-4056-9b52-910b37ee4065",
-            "type": "Village",
-            "level": 1
+          "comment": "Kalap",
+          "uuid": "70d06a04-9526-4056-9b52-910b37ee4065"
         },
         {
-            "name": "Kasla",
-            "uuid": "2827f2f9-096f-4f35-9890-417ecc5634f8",
-            "type": "Village",
-            "level": 1
+          "comment": "Kasla",
+          "uuid": "2827f2f9-096f-4f35-9890-417ecc5634f8"
         },
         {
-            "name": "Khanna",
-            "uuid": "9cf1b257-114d-4c04-8c7c-bd959bff51ed",
-            "type": "Village",
-            "level": 1
+          "comment": "Khanna",
+          "uuid": "9cf1b257-114d-4c04-8c7c-bd959bff51ed"
         },
         {
-            "name": "Khanyasani",
-            "uuid": "48662ebd-ef4f-482a-bb5f-03f81fef5ede",
-            "type": "Village",
-            "level": 1
+          "comment": "Khanyasani",
+          "uuid": "48662ebd-ef4f-482a-bb5f-03f81fef5ede"
         },
         {
-            "name": "Kotgaon",
-            "uuid": "18f291d9-9b03-402c-a218-f867c86025c2",
-            "type": "Village",
-            "level": 1
+          "comment": "Kotgaon",
+          "uuid": "18f291d9-9b03-402c-a218-f867c86025c2"
         },
         {
-            "name": "Liwari",
-            "uuid": "cdf25903-083f-4b44-9287-8d65360564b7",
-            "type": "Village",
-            "level": 1
+          "comment": "Liwari",
+          "uuid": "cdf25903-083f-4b44-9287-8d65360564b7"
         },
         {
-            "name": "Masri",
-            "uuid": "ca479dbf-bc6e-4055-b2c2-fc2a39257f83",
-            "type": "Village",
-            "level": 1
+          "comment": "Masri",
+          "uuid": "ca479dbf-bc6e-4055-b2c2-fc2a39257f83"
         },
         {
-            "name": "Naitwar",
-            "uuid": "40441ed0-038e-4271-b931-ee544d4c6bdd",
-            "type": "Village",
-            "level": 1
+          "comment": "Naitwar",
+          "uuid": "40441ed0-038e-4271-b931-ee544d4c6bdd"
         },
         {
-            "name": "Nuranu",
-            "uuid": "a3ce9c94-7336-4516-b098-697e68d9e449",
-            "type": "Village",
-            "level": 1
+          "comment": "Nuranu",
+          "uuid": "a3ce9c94-7336-4516-b098-697e68d9e449"
         },
         {
-            "name": "Osla",
-            "uuid": "aff27a07-399d-41b7-91e0-d7651fccbfea",
-            "type": "Village",
-            "level": 1
+          "comment": "Osla",
+          "uuid": "aff27a07-399d-41b7-91e0-d7651fccbfea"
         },
         {
-            "name": "Panw",
-            "uuid": "cd838311-5660-4617-af21-c76519f6e01f",
-            "type": "Village",
-            "level": 1
+          "comment": "Panw",
+          "uuid": "cd838311-5660-4617-af21-c76519f6e01f"
         },
         {
-            "name": "Pawni",
-            "uuid": "781978ca-c8ba-4ccf-b1a8-26c460696483",
-            "type": "Village",
-            "level": 1
+          "comment": "Pawni",
+          "uuid": "781978ca-c8ba-4ccf-b1a8-26c460696483"
         },
         {
-            "name": "Pujeli",
-            "uuid": "49e786ce-8754-420f-a274-ca16dfc7dc0a",
-            "type": "Village",
-            "level": 1
+          "comment": "Pujeli",
+          "uuid": "49e786ce-8754-420f-a274-ca16dfc7dc0a"
         },
         {
-            "name": "Regcha",
-            "uuid": "d14ef6de-e7fe-4449-a846-a55e7d6893e1",
-            "type": "Village",
-            "level": 1
+          "comment": "Regcha",
+          "uuid": "d14ef6de-e7fe-4449-a846-a55e7d6893e1"
         },
         {
-            "name": "Salra",
-            "uuid": "14738544-584a-4364-8dc4-ea14612a0552",
-            "type": "Village",
-            "level": 1
+          "comment": "Salra",
+          "uuid": "14738544-584a-4364-8dc4-ea14612a0552"
         },
         {
-            "name": "Sankri",
-            "uuid": "29a7e9f8-9006-489e-8a3d-1bbab8805edb",
-            "type": "Village",
-            "level": 1
+          "comment": "Sankri",
+          "uuid": "29a7e9f8-9006-489e-8a3d-1bbab8805edb"
         },
         {
-            "name": "Satta",
-            "uuid": "afc432cf-0b8a-4739-8526-1edfdc08b2be",
-            "type": "Village",
-            "level": 1
+          "comment": "Satta",
+          "uuid": "afc432cf-0b8a-4739-8526-1edfdc08b2be"
         },
         {
-            "name": "Saturi",
-            "uuid": "79e3fa0e-0c51-4dc7-9fa7-0635a9c9ef70",
-            "type": "Village",
-            "level": 1
+          "comment": "Saturi",
+          "uuid": "79e3fa0e-0c51-4dc7-9fa7-0635a9c9ef70"
         },
         {
-            "name": "Saur",
-            "uuid": "d563edef-66eb-4039-86dd-30d069160641",
-            "type": "Village",
-            "level": 1
+          "comment": "Saur",
+          "uuid": "d563edef-66eb-4039-86dd-30d069160641"
         },
         {
-            "name": "Sewa",
-            "uuid": "4b51226c-bce8-42c7-8aa5-7153d7800ff6",
-            "type": "Village",
-            "level": 1
+          "comment": "Sewa",
+          "uuid": "4b51226c-bce8-42c7-8aa5-7153d7800ff6"
         },
         {
-            "name": "Sidri",
-            "uuid": "04ec8eef-73ff-4ef1-8f2f-a0b4df945f63",
-            "type": "Village",
-            "level": 1
+          "comment": "Sidri",
+          "uuid": "04ec8eef-73ff-4ef1-8f2f-a0b4df945f63"
         },
         {
-            "name": "Sirga",
-            "uuid": "6b0ea8cf-d16b-48b4-ba11-1eb16a30e8c5",
-            "type": "Village",
-            "level": 1
+          "comment": "Sirga",
+          "uuid": "6b0ea8cf-d16b-48b4-ba11-1eb16a30e8c5"
         },
         {
-            "name": "Suchangaon",
-            "uuid": "b4f581a3-0e42-4b77-8c0f-d0ca240a41b3",
-            "type": "Village",
-            "level": 1
+          "comment": "Suchangaon",
+          "uuid": "b4f581a3-0e42-4b77-8c0f-d0ca240a41b3"
         },
         {
-            "name": "Wari",
-            "uuid": "582cb471-23a8-4075-8ffd-6afc77181149",
-            "type": "Village",
-            "level": 1
+          "comment": "Wari",
+          "uuid": "582cb471-23a8-4075-8ffd-6afc77181149"
         }
       ]
     }
