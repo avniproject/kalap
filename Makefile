@@ -73,9 +73,11 @@ deploy_catchments:
 deploy_locations:
 	$(call _curl,POST,locations,@locations.json)
 
-deploy_refdata: deploy_concepts deploy_locations deploy_catchments
+deploy_forms:
 	$(call _curl,POST,forms,@registrationForm.json)
 	$(call _curl,POST,formMappings,@formMappings.json)
+
+deploy_refdata: deploy_concepts deploy_locations deploy_catchments deploy_forms
 
 _deploy: deploy_admin_user deploy_refdata  deploy_rules
 deploy: _deploy deploy_dev_user
@@ -85,6 +87,12 @@ deploy_admin_user_prod:
 
 deploy_prod:
 	make auth deploy_refdata deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=kalap-admin password=$(password)
+
+deploy_concepts_prod:
+	make auth deploy_concepts poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=kalap-admin password=$(password)
+
+deploy_forms_prod:
+	make auth deploy_forms poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=kalap-admin password=$(password)
 
 deploy_rules_prod:
 	make auth deploy_rules poolId=$(OPENCHS_PROD_USER_POOL_ID) clientId=$(OPENCHS_PROD_APP_CLIENT_ID) server=https://server.openchs.org port=443 username=kalap-admin password=$(password)
