@@ -302,7 +302,7 @@
           "type": "SingleSelect",
           "concept": {
             "name": "Expenditure on travel, food and stay during outpatient facility visits",
-            "uuid": "e717cdf8-b5e1-47ee-bb04-56742dc0fb62"
+            "uuid": "86c7efcd-a9c5-48f7-bdc2-e1dc83f19f13"
           },
           "displayOrder": 6
         },
@@ -314,11 +314,10 @@
           "type": "SingleSelect",
           "concept": {
             "name": "Loss of wages during outpatient facility visits",
-            "uuid": "a5462454-a320-42e2-acdf-ecaf2de29cb8"
+            "uuid": "d6d9bf08-8cfd-4feb-9b6f-e04c9f168f23"
           },
           "displayOrder": 7
         }
-
       ]
     },
     {
@@ -803,7 +802,6 @@
           "displayOrder": 11.5,
           "mandatory": true
         },
-
         {
           "name": "Number of ANC check-ups",
           "uuid": "c6377bc1-1c1d-4347-83ce-3affaf167ae3",
@@ -1092,7 +1090,7 @@
             "name": "Past Pregnancy Complications",
             "uuid": "ed93039f-9eb4-4e66-bb5e-17114b3a2d23"
           },
-          "displayOrder":35
+          "displayOrder": 35
         }
       ]
     },

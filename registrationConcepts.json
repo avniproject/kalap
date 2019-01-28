@@ -480,7 +480,7 @@
   },
   {
     "name": "Expenditure on travel, food and stay during outpatient facility visits",
-    "uuid": "e717cdf8-b5e1-47ee-bb04-56742dc0fb62",
+    "uuid": "86c7efcd-a9c5-48f7-bdc2-e1dc83f19f13",
     "dataType": "Coded",
     "answers": [
       {
@@ -515,7 +515,7 @@
   },
   {
     "name": "Loss of wages during outpatient facility visits",
-    "uuid": "a5462454-a320-42e2-acdf-ecaf2de29cb8",
+    "uuid": "d6d9bf08-8cfd-4feb-9b6f-e04c9f168f23",
     "dataType": "Coded",
     "answers": [
       {
