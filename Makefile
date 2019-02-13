@@ -77,7 +77,10 @@ deploy_forms:
 	$(call _curl,POST,forms,@registrationForm.json)
 	$(call _curl,POST,formMappings,@formMappings.json)
 
-deploy_refdata: deploy_concepts deploy_locations deploy_catchments deploy_forms
+deploy_subjects:
+	$(call _curl,POST,operationalSubjectTypes,@operationalModules/operationalSubjectTypes.json)
+
+deploy_refdata: deploy_subjects deploy_concepts deploy_locations deploy_catchments deploy_forms
 
 _deploy: deploy_admin_user deploy_refdata  deploy_rules
 deploy: _deploy deploy_dev_user
