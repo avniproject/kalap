@@ -66,46 +66,12 @@
     "dataType": "Numeric"
   },
   {
-    "name": "Family member visited healthcare facility in last 12 months",
-    "uuid": "4d9a4033-4e4c-4c82-bb93-82249b6aecf1",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "name": "Yes",
-        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-      },
-      {
-        "name": "No",
-        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
-      }
-    ]
-  },
-  {
     "uuid": "3c9ff95c-5823-4d8b-9e66-994ac40dd6dd",
     "name": "Outpatient"
   },
   {
     "uuid": "860eadad-661e-4cfc-9869-b54d2dddff7b",
     "name": "Inpatient"
-  },
-  {
-    "name": "Type of facility visited by family members in last 12 months",
-    "uuid": "e378b199-3847-4652-acee-23938fc48b9a",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "3c9ff95c-5823-4d8b-9e66-994ac40dd6dd",
-        "name": "Outpatient"
-      },
-      {
-        "uuid": "860eadad-661e-4cfc-9869-b54d2dddff7b",
-        "name": "Inpatient"
-      },
-      {
-        "name": "Both",
-        "uuid": "246df73a-07d8-4924-8cf9-787dea8278fe"
-      }
-    ]
   },
   {
     "name": "Number of visits to outpatient facility",
@@ -187,6 +153,604 @@
   {
     "uuid": "c3cfdcbc-42b9-4f9b-9bae-b30f000c5749",
     "name": "Traditional method"
+  },
+  {
+    "uuid": "534187ce-6d59-4206-9976-0c860f8d1352",
+    "name": "Acute illness"
+  },
+  {
+    "uuid": "ff76dadb-ba80-4361-b5cf-294dd861f0b9",
+    "name": "Chronic illness"
+  },
+  {
+    "uuid": "7627dec4-89c9-4f5d-b811-c574a8219cc7",
+    "name": "Injury/Trauma"
+  },
+  {
+    "uuid": "09c9e9a1-9d7c-4f5b-a2c6-ec65dd27daac",
+    "name": "Immunization"
+  },
+  {
+    "uuid": "75027ac0-8264-4c4c-beec-8311a780570c",
+    "name": "Flu"
+  },
+  {
+    "uuid": "c588c99a-fa04-4560-81ad-c93e4dab7bfb",
+    "name": "Maternal health"
+  },
+  {
+    "uuid": "b0d1d1cc-8087-4379-b5f7-66192a549a84",
+    "name": "Disability"
+  },
+  {
+    "uuid": "6be7dc17-da8e-495b-8a2a-c39e33a0a63d",
+    "name": "Routine checkup"
+  },
+  {
+    "uuid": "ede66792-b085-4c05-9eae-da8aea9cd837",
+    "name": "Body ache"
+  },
+  {
+    "uuid": "a10ec6ea-4b94-4b77-bf2e-0746c7aa7139",
+    "name": "Don't remember"
+  },
+  {
+    "uuid": "4779cbdc-8337-4948-9fff-0d9a7f3115fe",
+    "name": "Diagnosis"
+  },
+  {
+    "uuid": "78285121-987e-4dfd-ac22-54eaf56b1aa0",
+    "name": "Drug prescription"
+  },
+  {
+    "uuid": "aab7023b-192b-4d56-bcb5-a10585a82527",
+    "name": "Psychosocial support"
+  },
+  {
+    "uuid": "e7497f3a-981a-4f6c-8a77-0b14a7924667",
+    "name": "Follow up visit"
+  },
+  {
+    "uuid": "71eb899a-be8b-473a-9091-7f801cbce58d",
+    "name": "Physiotherapy"
+  },
+  {
+    "name": "Less than 1000",
+    "uuid": "b560dc00-dc5b-4e2a-943f-6732b94156d6"
+  },
+  {
+    "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
+    "name": "1001-3000"
+  },
+  {
+    "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
+    "name": "3001-5000"
+  },
+  {
+    "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
+    "name": "5001-7500"
+  },
+  {
+    "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
+    "name": "7501-10000"
+  },
+  {
+    "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
+    "name": "10000-More"
+  },
+  {
+    "name": "Number of visits to inpatient facility",
+    "uuid": "4578ba9d-616a-4a7c-a458-9136a2f09210",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "b500ef26-f5ce-475b-be51-acf603636d76",
+    "name": "Infectious disease"
+  },
+  {
+    "uuid": "2aafb4b0-3316-4049-98a9-7842d8ec08ed",
+    "name": "Acute Psychosis"
+  },
+  {
+    "uuid": "4d4b2a90-0092-48d6-a787-3605d96c801a",
+    "name": "Non-surgical treatment"
+  },
+  {
+    "uuid": "084a94b3-0080-4f9e-9c16-66748ab2d48b",
+    "name": "Surgery"
+  },
+  {
+    "uuid": "c73677d4-6646-42cf-b685-420cc0e87257",
+    "name": "24 Hours"
+  },
+  {
+    "uuid": "e3423ebf-b7cc-4163-8730-cbbb0d39a39e",
+    "name": "Less than 3 days"
+  },
+  {
+    "uuid": "5924e1c4-8ff6-4521-af88-c8948ecccc2d",
+    "name": "3 to 7 days"
+  },
+  {
+    "uuid": "48a867c3-02a7-417a-af8e-8b9a7f8401a2",
+    "name": "More than 7 days"
+  },
+  {
+    "name": "Number of times RSBY availed in last 1 year",
+    "uuid": "f00cd9d4-f411-4db1-9ae6-6d7a6397f4fd",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of times MSBY availed in last 1 year",
+    "uuid": "7dddcfae-b1c2-41e7-8aa1-416a1704d769",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of people above age 60 dependent on family",
+    "uuid": "9a940132-aa3b-4c2f-bc6c-f5204395eda6",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "0191f899-0204-43a9-9e92-d0510692ff42",
+    "name": "More than four"
+  },
+  {
+    "uuid": "e0dc5515-1225-4ad9-8670-79537e24aa81",
+    "name": "Inaccessibility"
+  },
+  {
+    "uuid": "5d178337-2174-4ebe-b890-282236b48e0d",
+    "name": "Affordability"
+  },
+  {
+    "uuid": "e056b7fd-d651-4a80-b824-fb63e09daf92",
+    "name": "Mobility"
+  },
+  {
+    "name": "Number of cases of TB in family",
+    "uuid": "0533a356-6a9e-4225-82e4-e9348412d5ff",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Number of TB patients in family who did not complete treatment",
+    "uuid": "b158e19e-a930-44b7-a964-e3aac99e4b65",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "f46aa429-1ba8-4ea9-a3aa-d05cf1f1ce34",
+    "name": "Side effects"
+  },
+  {
+    "uuid": "b7cb0404-cec5-4b45-97eb-20f4b6d0732a",
+    "name": "Unavailability of medicines"
+  },
+  {
+    "name": "Number of deaths in family due to TB",
+    "uuid": "2f724404-9220-45dc-8b8b-3208b879ee5a",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Name of the interviewee",
+    "uuid": "b51544ec-eeb8-40d7-9cc5-5b428d0e9cbb",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "767ad09c-1233-4638-af1c-471db58d1aff",
+    "name": "Cloth"
+  },
+  {
+    "uuid": "41bb5b0a-8b77-4363-b998-10a8a23b64c2",
+    "name": "Sanitary napkin"
+  },
+  {
+    "uuid": "c174c9e2-32df-4e76-af82-7fedb41c9fd4",
+    "name": "Menstrual cup"
+  },
+  {
+    "uuid": "f8e3cc5b-3db2-4310-995d-b03b734c5812",
+    "name": "Tampons"
+  },
+  {
+    "uuid": "a54fcfad-8656-46ae-9706-671a600eabca",
+    "answers": [
+      {
+        "uuid": "767ad09c-1233-4638-af1c-471db58d1aff",
+        "name": "Cloth"
+      },
+      {
+        "uuid": "41bb5b0a-8b77-4363-b998-10a8a23b64c2",
+        "name": "Sanitary napkin"
+      },
+      {
+        "uuid": "c174c9e2-32df-4e76-af82-7fedb41c9fd4",
+        "name": "Menstrual cup"
+      },
+      {
+        "uuid": "f8e3cc5b-3db2-4310-995d-b03b734c5812",
+        "name": "Tampons"
+      }
+    ]
+  },
+  {
+    "uuid": "65ddba6c-a05d-44a2-9403-784d7fb15f56",
+    "name": "Normal water"
+  },
+  {
+    "uuid": "6f5b626e-f6e7-44c8-9e30-bde66d31b19e",
+    "name": "Boiling water"
+  },
+  {
+    "uuid": "a1d32ecd-2299-46c4-8f7f-b96d667227d0",
+    "name": "Normal/Boiling water with soap/disinfectant"
+  },
+  {
+    "uuid": "32024b59-0cf6-496f-93c3-676eaff65f21",
+    "name": "Indoors"
+  },
+  {
+    "uuid": "caafb329-304a-4165-ba96-eafe696f802e",
+    "name": "Outdoors"
+  },
+  {
+    "uuid": "6ef22bf2-630a-46d9-bdc1-628e0d4ede5b",
+    "name": "Dispose in garbage"
+  },
+  {
+    "uuid": "1566b486-a70d-4803-8961-0d45592da1ff",
+    "name": "Burn"
+  },
+  {
+    "name": "Average age of woman at the time of marriage in the family",
+    "uuid": "8266d576-ae32-444c-b8b1-cb534b980cac",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Average age of woman in the family at the time of first conception",
+    "uuid": "5198df8f-7018-4b76-85f5-c38b20851f2f",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "ab4a0b88-c09b-4a9f-970d-fda59af8f965",
+    "name": "Within first four months"
+  },
+  {
+    "uuid": "bcd70376-503c-435a-9f8a-be2e2986dd2b",
+    "name": "After four months"
+  },
+  {
+    "uuid": "6fdce1ef-e605-4b5f-8e02-7fd0d5fc647a",
+    "name": "Less than four"
+  },
+  {
+    "uuid": "918e6b37-fea4-455b-af51-7dc2547bfb90",
+    "name": "Greater than four"
+  },
+  {
+    "uuid": "93907b9d-8ee0-42cc-a7e2-4c521f591706",
+    "name": "ASHA/ANM"
+  },
+  {
+    "uuid": "2825b9a1-83a1-47a5-b0b7-6c6c299328fb",
+    "name": "Porridge"
+  },
+  {
+    "uuid": "880af0e7-1e3c-4022-9624-b2c6240affdf",
+    "name": "Dal"
+  },
+  {
+    "uuid": "444d6c66-627a-4edd-9c2f-018a46d038ce",
+    "name": "Chickpea"
+  },
+  {
+    "uuid": "aad524cf-a7df-4d3c-8e43-a1fc2276546e",
+    "name": "Iodized salt"
+  },
+  {
+    "uuid": "99e112c0-169e-4fc2-9c2d-5dd735db42f2",
+    "name": "All of them"
+  },
+  {
+    "uuid": "9d29b01f-8101-4fb6-83d0-5e965f8defb8",
+    "name": "Less than 3 months"
+  },
+  {
+    "uuid": "cd72bda9-dbee-4645-933b-7e293cbb8bf4",
+    "name": "3-6 months"
+  },
+  {
+    "uuid": "84b12858-e217-488f-8da3-478001fb706f",
+    "name": "6-9 months"
+  },
+  {
+    "uuid": "c6982ddc-963f-4ac6-ad9e-1ce968f2c6d5",
+    "name": "9-15 months"
+  },
+  {
+    "uuid": "031a487b-1d87-4d3b-90e2-a4a76e9d6509",
+    "name": "3 months"
+  },
+  {
+    "uuid": "c33dcc6b-5388-4b3e-be27-53a751573e7d",
+    "name": "6 months"
+  },
+  {
+    "uuid": "51b3b80b-d408-46ce-b700-389e93975931",
+    "name": "more than 6 months"
+  },
+  {
+    "uuid": "6fb9aaf3-9276-4fe7-96e9-3fb6284c62a3",
+    "name": "Less than 100"
+  },
+  {
+    "uuid": "056a37d5-1464-4b00-8b33-d8ba21a7680c",
+    "name": "100"
+  },
+  {
+    "uuid": "41e088af-0d74-41c9-83b1-d5fdcef72778",
+    "name": "More than 100"
+  },
+  {
+    "uuid": "a0d5ab3c-ccd3-42e7-a17e-149010bd0302",
+    "name": "Forgot to consume"
+  },
+  {
+    "uuid": "3162c804-80db-4f09-89ec-046fbb62005c",
+    "name": "Expired medicines"
+  },
+  {
+    "uuid": "c8fffb7c-2936-4297-8394-5f4602bd40e1",
+    "name": "Irregular consumption"
+  },
+  {
+    "uuid": "e3ce9291-b998-4db9-96b1-cd1f40bbc487",
+    "name": "At home without attendee"
+  },
+  {
+    "uuid": "142e601d-9cd1-4eab-9657-c2156476814a",
+    "name": "At home with qualified attendee"
+  },
+  {
+    "uuid": "ded013e2-781d-4b9f-8410-b0174591dc53",
+    "name": "Postterm"
+  },
+  {
+    "uuid": "a0405799-1e3c-40ef-90ba-84c9c0931660",
+    "answers": [
+      {
+        "uuid": "e3ce9291-b998-4db9-96b1-cd1f40bbc487",
+        "name": "At home without attendee"
+      },
+      {
+        "uuid": "142e601d-9cd1-4eab-9657-c2156476814a",
+        "name": "At home with qualified attendee"
+      },
+      {
+        "uuid": "27ad1cc9-bf28-4533-ad57-df846e77183c",
+        "name": "PHC Mori"
+      },
+      {
+        "uuid": "a29121ac-de4f-4201-93ed-f0f702a3f7fd",
+        "name": "CHC Purola"
+      },
+      {
+        "uuid": "5f696f1e-e087-48cd-901b-54a431982219",
+        "name": "Government hospital Uttarkashi"
+      },
+      {
+        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
+        "name": "Government hospital Dehradun"
+      },
+      {
+        "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
+        "name": "Government hospital Vikasnagar"
+      },
+      {
+        "uuid": "80f8e981-7e38-497d-bc7d-c8386c453d28",
+        "name": "Government hospital Chandigarh"
+      },
+      {
+        "uuid": "0e038f4a-d65d-4ae1-9d45-4a3791aa7698",
+        "name": "Government hospital Delhi"
+      },
+      {
+        "uuid": "d987260c-036e-4f9f-b3a3-53338a55d72e",
+        "name": "Private hospital/Clinic Uttarkashi"
+      },
+      {
+        "uuid": "0619efe9-1284-4771-9fa5-b0c0b08cdd2a",
+        "name": "Private hospital/Clinic Dehradun"
+      },
+      {
+        "uuid": "ad22689c-7499-42bd-8b24-26dbad038fbc",
+        "name": "Private hospital/Clinic Vikasnagar"
+      },
+      {
+        "uuid": "dbd1b4ed-c8c9-4488-a3b5-0065122e2241",
+        "name": "Private hospital/Clinic Chandigarh"
+      },
+      {
+        "uuid": "fc9ba035-6bac-4c14-92a2-920f92605ac3",
+        "name": "Private hospital/Clinic Delhi"
+      },
+      {
+        "uuid": "338447ff-6f71-43cc-869f-5d705065a92e",
+        "name": "NGO/Trust hospital"
+      }
+    ]
+  },
+  {
+    "uuid": "b69b0ec0-b5f1-4fcd-a948-2cd5ff69b482",
+    "name": "Fully"
+  },
+  {
+    "uuid": "e6d8b555-1cf4-4ec2-b468-68a434c2ad74",
+    "name": "Partially"
+  },
+  {
+    "uuid": "08947514-7aab-4c0c-a5e7-617c1d27b01f",
+    "name": "Neonatal Jaundice"
+  },
+  {
+    "uuid": "0bf339f6-e3fd-467d-be8b-b5dfe9613b5c",
+    "name": "Infections"
+  },
+  {
+    "uuid": "9e157658-7caf-466f-8ef6-d0f674a50fc4",
+    "name": "Pnuemonia"
+  },
+  {
+    "uuid": "2bee2b6b-bf6f-48df-b45a-dc16f6674559",
+    "name": "Developmental disorders"
+  },
+  {
+    "uuid": "f38c584c-d19e-4415-bb56-1e6493b95baa",
+    "name": "Common cold,cough,fever"
+  },
+  {
+    "uuid": "f2de2235-aaf8-44a2-99a6-a2b71836ad66",
+    "name": "Respiratory problems"
+  },
+  {
+    "uuid": "8a779ebd-8f38-4702-be5b-0e9e0107a0cb",
+    "name": "Respiratory disorders"
+  },
+  {
+    "uuid": "3f46bca9-33aa-4b56-bccb-818334490e60",
+    "name": "Oral health disorders"
+  },
+  {
+    "uuid": "bd5bf6ec-8448-4a4c-bf4e-5b22abf0db3f",
+    "name": "Mental health issues"
+  },
+  {
+    "uuid": "395946d2-de3f-4d1f-931f-29a165210914",
+    "name": "Sexual health disorders"
+  },
+  {
+    "uuid": "b57d38b6-1492-42b3-b4af-1b8be8817f44",
+    "name": "Animal attack, snake bite, insect bite"
+  },
+  {
+    "uuid": "3263f7c7-2532-458d-85ed-5055f449d5d3",
+    "name": "Natural"
+  },
+  {
+    "uuid": "5b54a16b-e678-4770-9f91-cb600f0f918f",
+    "name": "Unnatural"
+  },
+  {
+    "uuid": "91bc865f-9c6f-49e7-ba77-e49f39f99096",
+    "name": "Disease related"
+  },
+  {
+    "uuid": "ffd77d2f-d0dd-492f-9d61-a2508fff8309",
+    "name": "Physical disability"
+  },
+  {
+    "uuid": "ea893044-1d3e-4e54-8b0f-9ccd9f049c62",
+    "name": "Old age"
+  },
+  {
+    "uuid": "94e1bbcc-13b1-4d53-adea-bc66c100ed4a",
+    "name": "Alternate day"
+  },
+  {
+    "uuid": "1e63066e-6cf2-4833-b37f-3a00aac29a93",
+    "name": "Once in a week"
+  },
+  {
+    "uuid": "83acd738-603c-44a2-b64e-d1270136dac2",
+    "name": "Toothpaste"
+  },
+  {
+    "uuid": "0c3f0d08-a9f7-476b-87b8-e5e84d597baf",
+    "name": "Less than 1 litre"
+  },
+  {
+    "uuid": "1f9e01e0-2b98-4132-8210-5f35b04f323b",
+    "name": "1-2 litre"
+  },
+  {
+    "uuid": "f0143e2a-e88e-4861-af8c-0c09005063df",
+    "name": "More than 2 litres"
+  },
+  {
+    "uuid": "0b0f6614-f37b-441d-888d-46fbee09adda",
+    "name": "Piped water"
+  },
+  {
+    "uuid": "30c94df0-1c9b-4066-8cc3-6f7f8296428c",
+    "name": "Surface water"
+  },
+  {
+    "uuid": "38fda54d-b47a-424f-a594-4fcaec29e129",
+    "name": "Storage"
+  },
+  {
+    "uuid": "b729bf05-4061-4628-ab48-b1fd25debf15",
+    "name": "Boiling"
+  },
+  {
+    "uuid": "f8de7783-d0ca-493a-93be-14d41aad5de8",
+    "name": "Water filter"
+  },
+  {
+    "uuid": "2c6bba48-6507-4640-bd68-018665fdbb65",
+    "name": "Insurance"
+  },
+  {
+    "uuid": "ddc66482-b1c8-4c0a-9508-7ca0a2979189",
+    "name": "Loan from bank"
+  },
+  {
+    "uuid": "12ea347b-5d0c-46b4-b34b-cb565bdb25ef",
+    "name": "Loan from relatives"
+  },
+  {
+    "uuid": "4d3c1af5-6c74-425f-9318-39d265891041",
+    "name": "Personal saving"
+  },
+  {
+    "uuid": "afd88f04-e976-48f9-adfe-99414a87f51d",
+    "name": "Awareness program organised by health department"
+  },
+  {
+    "uuid": "511aa133-b3b9-45fa-910c-18aee542ad50",
+    "name": "Awareness program organised by NGO"
+  },
+  {
+    "name": "Family member visited healthcare facility in last 12 months",
+    "uuid": "4d9a4033-4e4c-4c82-bb93-82249b6aecf1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "name": "No",
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Type of facility visited by family members in last 12 months",
+    "uuid": "e378b199-3847-4652-acee-23938fc48b9a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3c9ff95c-5823-4d8b-9e66-994ac40dd6dd",
+        "name": "Outpatient"
+      },
+      {
+        "uuid": "860eadad-661e-4cfc-9869-b54d2dddff7b",
+        "name": "Inpatient"
+      },
+      {
+        "name": "Both",
+        "uuid": "246df73a-07d8-4924-8cf9-787dea8278fe"
+      }
+    ]
   },
   {
     "name": "Outpatient facility",
@@ -272,46 +836,6 @@
     ]
   },
   {
-    "uuid": "534187ce-6d59-4206-9976-0c860f8d1352",
-    "name": "Acute illness"
-  },
-  {
-    "uuid": "ff76dadb-ba80-4361-b5cf-294dd861f0b9",
-    "name": "Chronic illness"
-  },
-  {
-    "uuid": "7627dec4-89c9-4f5d-b811-c574a8219cc7",
-    "name": "Injury/Trauma"
-  },
-  {
-    "uuid": "09c9e9a1-9d7c-4f5b-a2c6-ec65dd27daac",
-    "name": "Immunization"
-  },
-  {
-    "uuid": "75027ac0-8264-4c4c-beec-8311a780570c",
-    "name": "Flu"
-  },
-  {
-    "uuid": "c588c99a-fa04-4560-81ad-c93e4dab7bfb",
-    "name": "Maternal health"
-  },
-  {
-    "uuid": "b0d1d1cc-8087-4379-b5f7-66192a549a84",
-    "name": "Disability"
-  },
-  {
-    "uuid": "6be7dc17-da8e-495b-8a2a-c39e33a0a63d",
-    "name": "Routine checkup"
-  },
-  {
-    "uuid": "ede66792-b085-4c05-9eae-da8aea9cd837",
-    "name": "Body ache"
-  },
-  {
-    "uuid": "a10ec6ea-4b94-4b77-bf2e-0746c7aa7139",
-    "name": "Don't remember"
-  },
-  {
     "name": "Reason for visit to outpatient facility",
     "uuid": "4eb520b1-b7f1-4621-ad18-1c839b4dcb0c",
     "dataType": "Coded",
@@ -368,26 +892,6 @@
     ]
   },
   {
-    "uuid": "4779cbdc-8337-4948-9fff-0d9a7f3115fe",
-    "name": "Diagnosis"
-  },
-  {
-    "uuid": "78285121-987e-4dfd-ac22-54eaf56b1aa0",
-    "name": "Drug prescription"
-  },
-  {
-    "uuid": "aab7023b-192b-4d56-bcb5-a10585a82527",
-    "name": "Psychosocial support"
-  },
-  {
-    "uuid": "e7497f3a-981a-4f6c-8a77-0b14a7924667",
-    "name": "Follow up visit"
-  },
-  {
-    "uuid": "71eb899a-be8b-473a-9091-7f801cbce58d",
-    "name": "Physiotherapy"
-  },
-  {
     "name": "Treatment received at outpatient facility",
     "uuid": "95b1deca-a98a-4cff-8560-86df946b1600",
     "dataType": "Coded",
@@ -418,30 +922,6 @@
         "unique": true
       }
     ]
-  },
-  {
-    "name": "Less than 1000",
-    "uuid": "b560dc00-dc5b-4e2a-943f-6732b94156d6"
-  },
-  {
-    "uuid": "9389a40e-27e6-4013-9a39-3cd86965f548",
-    "name": "1001-3000"
-  },
-  {
-    "uuid": "2914f9e3-7939-48f1-afa2-abd765912f63",
-    "name": "3001-5000"
-  },
-  {
-    "uuid": "6c8ab1f0-803f-4973-94d9-d3dc32e45da4",
-    "name": "5001-7500"
-  },
-  {
-    "uuid": "2eac82c1-ea09-471b-a5a9-02399915d8a2",
-    "name": "7501-10000"
-  },
-  {
-    "uuid": "bba2df92-4fa0-4d3e-8fd8-fa81bc162797",
-    "name": "10000-More"
   },
   {
     "name": "Expenditure on medical services during outpatient facility visits",
@@ -549,11 +1029,6 @@
     ]
   },
   {
-    "name": "Number of visits to inpatient facility",
-    "uuid": "4578ba9d-616a-4a7c-a458-9136a2f09210",
-    "dataType": "Numeric"
-  },
-  {
     "name": "Inpatient facility",
     "uuid": "a6306f99-ece4-4c0c-8ae0-2cc88f2ef783",
     "dataType": "Coded",
@@ -613,14 +1088,6 @@
     ]
   },
   {
-    "uuid": "b500ef26-f5ce-475b-be51-acf603636d76",
-    "name": "Infectious disease"
-  },
-  {
-    "uuid": "2aafb4b0-3316-4049-98a9-7842d8ec08ed",
-    "name": "Acute Psychosis"
-  },
-  {
     "name": "Reason for visit to inpatient facility",
     "uuid": "3844b23c-937b-4796-8988-0fd0e6c9eebf",
     "dataType": "Coded",
@@ -665,14 +1132,6 @@
     ]
   },
   {
-    "uuid": "4d4b2a90-0092-48d6-a787-3605d96c801a",
-    "name": "Non-surgical treatment"
-  },
-  {
-    "uuid": "084a94b3-0080-4f9e-9c16-66748ab2d48b",
-    "name": "Surgery"
-  },
-  {
     "name": "Treatment received at inpatient facility",
     "uuid": "7d5c73eb-a1ec-4f14-8dc1-3e7df7597b1a",
     "dataType": "Coded",
@@ -695,22 +1154,6 @@
         "unique": true
       }
     ]
-  },
-  {
-    "uuid": "c73677d4-6646-42cf-b685-420cc0e87257",
-    "name": "24 Hours"
-  },
-  {
-    "uuid": "e3423ebf-b7cc-4163-8730-cbbb0d39a39e",
-    "name": "Less than 3 days"
-  },
-  {
-    "uuid": "5924e1c4-8ff6-4521-af88-c8948ecccc2d",
-    "name": "3 to 7 days"
-  },
-  {
-    "uuid": "48a867c3-02a7-417a-af8e-8b9a7f8401a2",
-    "name": "More than 7 days"
   },
   {
     "name": "Duration of visit at inpatient facility",
@@ -867,21 +1310,6 @@
     ]
   },
   {
-    "name": "Number of times RSBY availed in last 1 year",
-    "uuid": "f00cd9d4-f411-4db1-9ae6-6d7a6397f4fd",
-    "dataType": "Numeric"
-  },
-  {
-    "name": "Number of times MSBY availed in last 1 year",
-    "uuid": "7dddcfae-b1c2-41e7-8aa1-416a1704d769",
-    "dataType": "Numeric"
-  },
-  {
-    "name": "Number of people above age 60 dependent on family",
-    "uuid": "9a940132-aa3b-4c2f-bc6c-f5204395eda6",
-    "dataType": "Numeric"
-  },
-  {
     "name": "Whether elderly family members visit doctor for regular health checkup",
     "uuid": "4783fb7f-b558-485f-b178-62c69c1af722",
     "dataType": "Coded",
@@ -895,10 +1323,6 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
-  },
-  {
-    "uuid": "0191f899-0204-43a9-9e92-d0510692ff42",
-    "name": "More than four"
   },
   {
     "name": "Number of health checkup visits annually by elderly",
@@ -999,18 +1423,6 @@
     ]
   },
   {
-    "uuid": "e0dc5515-1225-4ad9-8670-79537e24aa81",
-    "name": "Inaccessibility"
-  },
-  {
-    "uuid": "5d178337-2174-4ebe-b890-282236b48e0d",
-    "name": "Affordability"
-  },
-  {
-    "uuid": "e056b7fd-d651-4a80-b824-fb63e09daf92",
-    "name": "Mobility"
-  },
-  {
     "name": "Reason for not doing regular health check-ups by elderly",
     "uuid": "9617ca20-0c5b-4651-83b5-005e8ce01bf4",
     "dataType": "Coded",
@@ -1041,11 +1453,6 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
-  },
-  {
-    "name": "Number of cases of TB in family",
-    "uuid": "0533a356-6a9e-4225-82e4-e9348412d5ff",
-    "dataType": "Numeric"
   },
   {
     "name": "Facility where TB cases were diagnosed",
@@ -1113,19 +1520,6 @@
         "name": "NGO/Trust hospital"
       }
     ]
-  },
-  {
-    "name": "Number of TB patients in family who did not complete treatment",
-    "uuid": "b158e19e-a930-44b7-a964-e3aac99e4b65",
-    "dataType": "Numeric"
-  },
-  {
-    "uuid": "f46aa429-1ba8-4ea9-a3aa-d05cf1f1ce34",
-    "name": "Side effects"
-  },
-  {
-    "uuid": "b7cb0404-cec5-4b45-97eb-20f4b6d0732a",
-    "name": "Unavailability of medicines"
   },
   {
     "name": "Reason for any TB patient in family not completing treatment",
@@ -1323,16 +1717,6 @@
     ]
   },
   {
-    "name": "Number of deaths in family due to TB",
-    "uuid": "2f724404-9220-45dc-8b8b-3208b879ee5a",
-    "dataType": "Numeric"
-  },
-  {
-    "name": "Name of the interviewee",
-    "uuid": "b51544ec-eeb8-40d7-9cc5-5b428d0e9cbb",
-    "dataType": "Text"
-  },
-  {
     "name": "Relationship with the head of the family",
     "uuid": "29e71291-9f60-4251-af98-d3b744e1d368",
     "dataType": "Coded",
@@ -1354,55 +1738,6 @@
         "uuid": "74466f64-3f7c-4046-aaae-57803cee46b1"
       }
     ]
-  },
-  {
-    "uuid": "767ad09c-1233-4638-af1c-471db58d1aff",
-    "name": "Cloth"
-  },
-  {
-    "uuid": "41bb5b0a-8b77-4363-b998-10a8a23b64c2",
-    "name": "Sanitary napkin"
-  },
-  {
-    "uuid": "c174c9e2-32df-4e76-af82-7fedb41c9fd4",
-    "name": "Menstrual cup"
-  },
-  {
-    "uuid": "f8e3cc5b-3db2-4310-995d-b03b734c5812",
-    "name": "Tampons"
-  },
-  {
-    "uuid": "a54fcfad-8656-46ae-9706-671a600eabca",
-    "answers": [
-      {
-        "uuid": "767ad09c-1233-4638-af1c-471db58d1aff",
-        "name": "Cloth"
-      },
-      {
-        "uuid": "41bb5b0a-8b77-4363-b998-10a8a23b64c2",
-        "name": "Sanitary napkin"
-      },
-      {
-        "uuid": "c174c9e2-32df-4e76-af82-7fedb41c9fd4",
-        "name": "Menstrual cup"
-      },
-      {
-        "uuid": "f8e3cc5b-3db2-4310-995d-b03b734c5812",
-        "name": "Tampons"
-      }
-    ]
-  },
-  {
-    "uuid": "65ddba6c-a05d-44a2-9403-784d7fb15f56",
-    "name": "Normal water"
-  },
-  {
-    "uuid": "6f5b626e-f6e7-44c8-9e30-bde66d31b19e",
-    "name": "Boiling water"
-  },
-  {
-    "uuid": "a1d32ecd-2299-46c4-8f7f-b96d667227d0",
-    "name": "Normal/Boiling water with soap/disinfectant"
   },
   {
     "name": "Cleaning method for cloth used during menstruation",
@@ -1429,14 +1764,6 @@
     ]
   },
   {
-    "uuid": "32024b59-0cf6-496f-93c3-676eaff65f21",
-    "name": "Indoors"
-  },
-  {
-    "uuid": "caafb329-304a-4165-ba96-eafe696f802e",
-    "name": "Outdoors"
-  },
-  {
     "name": "Drying method for cloth used during menstruation",
     "uuid": "3f4c9bbc-4e31-4ad1-b8b7-6a93d2093a67",
     "dataType": "Coded",
@@ -1450,14 +1777,6 @@
         "name": "Outdoors"
       }
     ]
-  },
-  {
-    "uuid": "6ef22bf2-630a-46d9-bdc1-628e0d4ede5b",
-    "name": "Dispose in garbage"
-  },
-  {
-    "uuid": "1566b486-a70d-4803-8961-0d45592da1ff",
-    "name": "Burn"
   },
   {
     "name": "Disposal method for sanitary napkin",
@@ -1475,16 +1794,6 @@
     ]
   },
   {
-    "name": "Average age of woman at the time of marriage in the family",
-    "uuid": "8266d576-ae32-444c-b8b1-cb534b980cac",
-    "dataType": "Numeric"
-  },
-  {
-    "name": "Average age of woman in the family at the time of first conception",
-    "uuid": "5198df8f-7018-4b76-85f5-c38b20851f2f",
-    "dataType": "Numeric"
-  },
-  {
     "name": "Whether antenatal check-up for last child done",
     "uuid": "f0434c1e-49b0-4f60-a42f-d42d9a56e21d",
     "dataType": "Coded",
@@ -1496,14 +1805,6 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
-  },
-  {
-    "uuid": "ab4a0b88-c09b-4a9f-970d-fda59af8f965",
-    "name": "Within first four months"
-  },
-  {
-    "uuid": "bcd70376-503c-435a-9f8a-be2e2986dd2b",
-    "name": "After four months"
   },
   {
     "name": "Timing of ANC registration with respect to pregnancy",
@@ -1519,14 +1820,6 @@
         "name": "After four months"
       }
     ]
-  },
-  {
-    "uuid": "6fdce1ef-e605-4b5f-8e02-7fd0d5fc647a",
-    "name": "Less than four"
-  },
-  {
-    "uuid": "918e6b37-fea4-455b-af51-7dc2547bfb90",
-    "name": "Greater than four"
   },
   {
     "name": "Number of ANC check-ups",
@@ -1547,11 +1840,6 @@
       }
     ]
   },
-  {
-    "uuid": "93907b9d-8ee0-42cc-a7e2-4c521f591706",
-    "name": "ASHA/ANM"
-  },
-
   {
     "name": "Facility where ANC check-ups done",
     "uuid": "b62be9b8-afff-4e05-9363-35f2b2d7d649",
@@ -1616,7 +1904,6 @@
       {
         "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
-
     ]
   },
   {
@@ -1646,26 +1933,6 @@
     ]
   },
   {
-    "uuid": "2825b9a1-83a1-47a5-b0b7-6c6c299328fb",
-    "name": "Porridge"
-  },
-  {
-    "uuid": "880af0e7-1e3c-4022-9624-b2c6240affdf",
-    "name": "Dal"
-  },
-  {
-    "uuid": "444d6c66-627a-4edd-9c2f-018a46d038ce",
-    "name": "Chickpea"
-  },
-  {
-    "uuid": "aad524cf-a7df-4d3c-8e43-a1fc2276546e",
-    "name": "Iodized salt"
-  },
-  {
-    "uuid": "99e112c0-169e-4fc2-9c2d-5dd735db42f2",
-    "name": "All of them"
-  },
-  {
     "name": "Nutritional supplements received from anganwadi during pregnancy",
     "uuid": "3dcc2b92-ef39-43a2-85ff-0e42e135f2f4",
     "dataType": "Coded",
@@ -1692,22 +1959,6 @@
         "unique": true
       }
     ]
-  },
-  {
-    "uuid": "9d29b01f-8101-4fb6-83d0-5e965f8defb8",
-    "name": "Less than 3 months"
-  },
-  {
-    "uuid": "cd72bda9-dbee-4645-933b-7e293cbb8bf4",
-    "name": "3-6 months"
-  },
-  {
-    "uuid": "84b12858-e217-488f-8da3-478001fb706f",
-    "name": "6-9 months"
-  },
-  {
-    "uuid": "c6982ddc-963f-4ac6-ad9e-1ce968f2c6d5",
-    "name": "9-15 months"
   },
   {
     "name": "Duration for receiving nutritional supplements from anganwadi during pregnancy",
@@ -1772,19 +2023,6 @@
     ]
   },
   {
-    "uuid": "031a487b-1d87-4d3b-90e2-a4a76e9d6509",
-    "name": "3 months"
-  },
-  {
-    "uuid": "c33dcc6b-5388-4b3e-be27-53a751573e7d",
-    "name": "6 months"
-  },
-  {
-    "uuid": "51b3b80b-d408-46ce-b700-389e93975931",
-    "name": "more than 6 months"
-  },
-
-  {
     "name": "Duration for receiving IFA supplementation",
     "uuid": "154fed3c-9e02-468c-b109-714bcdafec04",
     "dataType": "Coded",
@@ -1806,18 +2044,6 @@
         "name": "more than 6 months"
       }
     ]
-  },
-  {
-    "uuid": "6fb9aaf3-9276-4fe7-96e9-3fb6284c62a3",
-    "name": "Less than 100"
-  },
-  {
-    "uuid": "056a37d5-1464-4b00-8b33-d8ba21a7680c",
-    "name": "100"
-  },
-  {
-    "uuid": "41e088af-0d74-41c9-83b1-d5fdcef72778",
-    "name": "More than 100"
   },
   {
     "name": "Number of IFA tablets received",
@@ -1859,18 +2085,6 @@
     ]
   },
   {
-    "uuid": "a0d5ab3c-ccd3-42e7-a17e-149010bd0302",
-    "name": "Forgot to consume"
-  },
-  {
-    "uuid": "3162c804-80db-4f09-89ec-046fbb62005c",
-    "name": "Expired medicines"
-  },
-  {
-    "uuid": "c8fffb7c-2936-4297-8394-5f4602bd40e1",
-    "name": "Irregular consumption"
-  },
-  {
     "name": "Reason for not consuming IFA tablets",
     "uuid": "8d9a3016-6c2a-404a-b8ad-4408ddc16746",
     "dataType": "Coded",
@@ -1896,14 +2110,6 @@
         "comment": "Other"
       }
     ]
-  },
-  {
-    "uuid": "e3ce9291-b998-4db9-96b1-cd1f40bbc487",
-    "name": "At home without attendee"
-  },
-  {
-    "uuid": "142e601d-9cd1-4eab-9657-c2156476814a",
-    "name": "At home with qualified attendee"
   },
   {
     "name": "IFA received at",
@@ -1971,76 +2177,6 @@
       }
     ]
   },
-  {
-    "uuid": "ded013e2-781d-4b9f-8410-b0174591dc53",
-    "name": "Postterm"
-  },
-  {
-    "uuid": "a0405799-1e3c-40ef-90ba-84c9c0931660",
-    "answers": [
-      {
-        "uuid": "e3ce9291-b998-4db9-96b1-cd1f40bbc487",
-        "name": "At home without attendee"
-      },
-      {
-        "uuid": "142e601d-9cd1-4eab-9657-c2156476814a",
-        "name": "At home with qualified attendee"
-      },
-      {
-        "uuid": "27ad1cc9-bf28-4533-ad57-df846e77183c",
-        "name": "PHC Mori"
-      },
-      {
-        "uuid": "a29121ac-de4f-4201-93ed-f0f702a3f7fd",
-        "name": "CHC Purola"
-      },
-      {
-        "uuid": "5f696f1e-e087-48cd-901b-54a431982219",
-        "name": "Government hospital Uttarkashi"
-      },
-      {
-        "uuid": "315feef5-43a5-4152-8f87-d38fc6057e66",
-        "name": "Government hospital Dehradun"
-      },
-      {
-        "uuid": "b6414628-a566-43e5-9621-c1d5994c2003",
-        "name": "Government hospital Vikasnagar"
-      },
-      {
-        "uuid": "80f8e981-7e38-497d-bc7d-c8386c453d28",
-        "name": "Government hospital Chandigarh"
-      },
-      {
-        "uuid": "0e038f4a-d65d-4ae1-9d45-4a3791aa7698",
-        "name": "Government hospital Delhi"
-      },
-      {
-        "uuid": "d987260c-036e-4f9f-b3a3-53338a55d72e",
-        "name": "Private hospital/Clinic Uttarkashi"
-      },
-      {
-        "uuid": "0619efe9-1284-4771-9fa5-b0c0b08cdd2a",
-        "name": "Private hospital/Clinic Dehradun"
-      },
-      {
-        "uuid": "ad22689c-7499-42bd-8b24-26dbad038fbc",
-        "name": "Private hospital/Clinic Vikasnagar"
-      },
-      {
-        "uuid": "dbd1b4ed-c8c9-4488-a3b5-0065122e2241",
-        "name": "Private hospital/Clinic Chandigarh"
-      },
-      {
-        "uuid": "fc9ba035-6bac-4c14-92a2-920f92605ac3",
-        "name": "Private hospital/Clinic Delhi"
-      },
-      {
-        "uuid": "338447ff-6f71-43cc-869f-5d705065a92e",
-        "name": "NGO/Trust hospital"
-      }
-    ]
-  },
-
   {
     "name": "Gestational age category at delivery",
     "uuid": "a85981dd-6772-43d7-acb5-c58b45d54910",
@@ -2135,9 +2271,7 @@
     "name": "Post delivery complications",
     "uuid": "fc37fbd3-fd2d-45df-ad78-e6fe0a010fb1",
     "dataType": "Coded",
-    "answers": [
-
-    ]
+    "answers": []
   },
   {
     "name": "Expenditure on medical services during pregnancy",
@@ -2363,16 +2497,6 @@
     ]
   },
   {
-    "uuid": "b69b0ec0-b5f1-4fcd-a948-2cd5ff69b482",
-    "name": "Fully"
-  },
-  {
-    "uuid": "e6d8b555-1cf4-4ec2-b468-68a434c2ad74",
-    "name": "Partially"
-  },
-
-  
-  {
     "name": "Immunization schedule followed for age",
     "uuid": "8a9ac920-de23-4d8a-83eb-ceedf75ae673",
     "dataType": "Coded",
@@ -2460,23 +2584,6 @@
     ]
   },
   {
-    "uuid": "08947514-7aab-4c0c-a5e7-617c1d27b01f",
-    "name": "Neonatal Jaundice"
-  },
-  {
-    "uuid": "0bf339f6-e3fd-467d-be8b-b5dfe9613b5c",
-    "name": "Infections"
-  },
-  {
-    "uuid": "9e157658-7caf-466f-8ef6-d0f674a50fc4",
-    "name": "Pnuemonia"
-  },
-  {
-    "uuid": "2bee2b6b-bf6f-48df-b45a-dc16f6674559",
-    "name": "Developmental disorders"
-  },
-
-  {
     "name": "Complications after birth",
     "uuid": "f55768e8-658c-4fff-9808-9efb8ecb8d76",
     "dataType": "Coded",
@@ -2513,15 +2620,6 @@
     ]
   },
   {
-    "uuid": "f38c584c-d19e-4415-bb56-1e6493b95baa",
-    "name": "Common cold,cough,fever"
-  },
-  {
-    "uuid": "f2de2235-aaf8-44a2-99a6-a2b71836ad66",
-    "name": "Respiratory problems"
-  },
-
-  {
     "name": "Current morbidities",
     "uuid": "7133618c-6237-4dba-8733-0f1967cc5955",
     "dataType": "Coded",
@@ -2555,26 +2653,6 @@
         "unique": true
       }
     ]
-  },
-  {
-    "uuid": "8a779ebd-8f38-4702-be5b-0e9e0107a0cb",
-    "name": "Respiratory disorders"
-  },
-  {
-    "uuid": "3f46bca9-33aa-4b56-bccb-818334490e60",
-    "name": "Oral health disorders"
-  },
-  {
-    "uuid": "bd5bf6ec-8448-4a4c-bf4e-5b22abf0db3f",
-    "name": "Mental health issues"
-  },
-  {
-    "uuid": "395946d2-de3f-4d1f-931f-29a165210914",
-    "name": "Sexual health disorders"
-  },
-  {
-    "uuid": "b57d38b6-1492-42b3-b4af-1b8be8817f44",
-    "name": "Animal attack, snake bite, insect bite"
   },
   {
     "name": "Other health conditions in past 1 year in family",
@@ -2635,14 +2713,6 @@
     ]
   },
   {
-    "uuid": "3263f7c7-2532-458d-85ed-5055f449d5d3",
-    "name": "Natural"
-  },
-  {
-    "uuid": "5b54a16b-e678-4770-9f91-cb600f0f918f",
-    "name": "Unnatural"
-  },
-  {
     "name": "Reason for death event in the family in last 1 year",
     "uuid": "935d863e-12d6-4dd5-9d84-ea9004bcae66",
     "dataType": "Coded",
@@ -2671,18 +2741,6 @@
     ]
   },
   {
-    "uuid": "91bc865f-9c6f-49e7-ba77-e49f39f99096",
-    "name": "Disease related"
-  },
-  {
-    "uuid": "ffd77d2f-d0dd-492f-9d61-a2508fff8309",
-    "name": "Physical disability"
-  },
-  {
-    "uuid": "ea893044-1d3e-4e54-8b0f-9ccd9f049c62",
-    "name": "Old age"
-  },
-  {
     "name": "Reason for mobility issues in family",
     "uuid": "036760f5-24f3-4688-a280-10c9b567f6f3",
     "dataType": "Coded",
@@ -2705,14 +2763,6 @@
         "unique": true
       }
     ]
-  },
-  {
-    "uuid": "94e1bbcc-13b1-4d53-adea-bc66c100ed4a",
-    "name": "Alternate day"
-  },
-  {
-    "uuid": "1e63066e-6cf2-4833-b37f-3a00aac29a93",
-    "name": "Once in a week"
   },
   {
     "name": "Frequency of family members taking bath",
@@ -2755,10 +2805,6 @@
         "name": "Never"
       }
     ]
-  },
-  {
-    "uuid": "83acd738-603c-44a2-b64e-d1270136dac2",
-    "name": "Toothpaste"
   },
   {
     "name": "Method of cleaning teeth",
@@ -2927,18 +2973,6 @@
     ]
   },
   {
-    "uuid": "0c3f0d08-a9f7-476b-87b8-e5e84d597baf",
-    "name": "Less than 1 litre"
-  },
-  {
-    "uuid": "1f9e01e0-2b98-4132-8210-5f35b04f323b",
-    "name": "1-2 litre"
-  },
-  {
-    "uuid": "f0143e2a-e88e-4861-af8c-0c09005063df",
-    "name": "More than 2 litres"
-  },
-  {
     "name": "Quantity of daily water consumption",
     "uuid": "20895b69-90f2-4010-b3c0-85fb604a16d9",
     "dataType": "Coded",
@@ -2958,14 +2992,6 @@
     ]
   },
   {
-    "uuid": "0b0f6614-f37b-441d-888d-46fbee09adda",
-    "name": "Piped water"
-  },
-  {
-    "uuid": "30c94df0-1c9b-4066-8cc3-6f7f8296428c",
-    "name": "Surface water"
-  },
-  {
     "name": "Source of water",
     "uuid": "c23deaa5-5452-4928-8d9a-0af61d11d75e",
     "dataType": "Coded",
@@ -2979,18 +3005,6 @@
         "name": "Surface water"
       }
     ]
-  },
-  {
-    "uuid": "38fda54d-b47a-424f-a594-4fcaec29e129",
-    "name": "Storage"
-  },
-  {
-    "uuid": "b729bf05-4061-4628-ab48-b1fd25debf15",
-    "name": "Boiling"
-  },
-  {
-    "uuid": "f8de7783-d0ca-493a-93be-14d41aad5de8",
-    "name": "Water filter"
   },
   {
     "name": "Water filtration method",
@@ -3015,22 +3029,6 @@
         "unique": true
       }
     ]
-  },
-  {
-    "uuid": "2c6bba48-6507-4640-bd68-018665fdbb65",
-    "name": "Insurance"
-  },
-  {
-    "uuid": "ddc66482-b1c8-4c0a-9508-7ca0a2979189",
-    "name": "Loan from bank"
-  },
-  {
-    "uuid": "12ea347b-5d0c-46b4-b34b-cb565bdb25ef",
-    "name": "Loan from relatives"
-  },
-  {
-    "uuid": "4d3c1af5-6c74-425f-9318-39d265891041",
-    "name": "Personal saving"
   },
   {
     "name": "Source of finance to deal with health emergency",
@@ -3099,15 +3097,6 @@
       }
     ]
   },
-  {
-    "uuid": "afd88f04-e976-48f9-adfe-99414a87f51d",
-    "name": "Awareness program organised by health department"
-  },
-  {
-    "uuid": "511aa133-b3b9-45fa-910c-18aee542ad50",
-    "name": "Awareness program organised by NGO"
-  },
-
   {
     "name": "Source of recieving health related awareness/information in last 1 year",
     "uuid": "b2a031a7-1b41-4938-a6f1-6fe79c5d1d28",

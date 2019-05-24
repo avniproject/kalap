@@ -1,4 +1,4 @@
-const regForm = require('./registrationForm.json');
+const regForm = require('../registration/registrationForm.json');
 const ascending = (a,b)=> a.displayOrder - b.displayOrder;
 const obs = regForm.formElementGroups.sort(ascending).map(k => k.formElements.sort(ascending)).reduce((a, b) => a.concat(b), []).map(fm => {
     if (fm.type === 'MultiSelect') {
